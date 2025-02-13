@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../css/navbar.css";
 import { Link } from "react-router-dom";
 
 function Navbar() {
+  useEffect(() => {
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href =
+      "https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css";
+    document.head.appendChild(link);
+
+    return () => {
+      document.head.removeChild(link);
+    };
+  }, []);
   return (
     <div className="navbar">
       <div className="navbar-logo">
@@ -10,16 +21,24 @@ function Navbar() {
       </div>
       <ul>
         <li>
-          <Link to="/home">Home</Link>
+          <Link to="/beranda">
+            <i className="bx bx-home icon"></i> Beranda
+          </Link>
         </li>
         <li>
-          <Link to="/home">Home</Link>
+          <Link to="/daftar-pasar">
+            <i className="bx bx-store icon"></i> Daftar Pasar
+          </Link>
         </li>
         <li>
-          <Link to="/home">Home</Link>
+          <Link to="/peta-pasar">
+            <i className="bx bx-map icon"></i> Peta Pasar
+          </Link>
         </li>
         <li>
-          <Link to="/home">Home</Link>
+          <Link to="/kontak">
+            <i className="bx bx-phone icon"></i> Kontak
+          </Link>
         </li>
       </ul>
       <div className="navbar-search">
@@ -29,4 +48,5 @@ function Navbar() {
     </div>
   );
 }
+
 export default Navbar;
