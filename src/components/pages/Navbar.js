@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -9,19 +10,19 @@ function Navbar() {
       </div>
       <ul>
         <li>
-          <a href="Home">Home</a>
+          <Link to="/home">Home</Link>
         </li>
         <li>
-          <a href="Home">Home</a>
+          <Link to="/home">Home</Link>
         </li>
         <li>
-          <a href="Home">Home</a>
+          <Link to="/home">Home</Link>
         </li>
         <li>
-          <a href="Home">Home</a>
+          <Link to="/home">Home</Link>
         </li>
       </ul>
-      <div class="navbar-search">
+      <div className="navbar-search">
         <input type="text" placeholder="Search.." />
         <button type="submit">Search</button>
       </div>
