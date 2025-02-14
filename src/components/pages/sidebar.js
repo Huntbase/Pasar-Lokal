@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../image/logo_sidebar.png";
+import logo from "../image/sidebar/logo_sidebar.png";
 import "../css/sidebar.css";
 
 function Sidebar() {

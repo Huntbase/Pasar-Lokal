@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --body-color: #e4e9f7;
+  --sidebar-color: #fff;
+  --primary-color: #695cfe;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --text-color: #707070;
+  --highlight-color: #10a37f;
+  --tran-03: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  width: 100%;
+}
+
+.slick-slider {
+  position: relative;
+}
+
+.slide {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.slide .image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.image-data {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.image-data span.text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.image-data h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.tombol-bawah-tulisan {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: #333;
+  background: #fff;
+  text-decoration: none;
+  margin-top: 25px;
+  transition: var(--tran-03);
+  font-size: 16px;
+}
+
+.tombol-bawah-tulisan:hover {
+  background-color: #c87e4f;
+  color: white;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 20px; /* Ubah sesuai kebutuhan */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Jarak antar dots */
+}
+
+/* Warna dan ukuran dots */
+.slick-dots li button:before {
+  font-size: 12px; /* Ukuran dot */
+  color: white; /* Warna default */
+  opacity: 0.75; /* Transparansi */
+  transition: var(--tran-03);
+}
+
+/* Warna dot saat aktif */
+.slick-dots li.slick-active button:before {
+  color: #10a37f; /* Warna aktif */
+  opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .image-data {
+    top: 50%;
+    width: 90%;
+  }
+
+  .image-data span.text {
+    font-size: 14px;
+  }
+
+  .image-data h2 {
+    font-size: 24px;
+  }
+
+  .tombol-bawah-tulisan {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
