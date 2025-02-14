@@ -21,7 +21,7 @@ function Navbar() {
       </div>
       <ul>
         <li>
-          <Link to="/beranda">
+          <Link to="/">
             <i className="bx bx-home icon"></i> Beranda
           </Link>
         </li>
