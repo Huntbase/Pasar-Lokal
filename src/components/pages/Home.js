@@ -35,7 +35,7 @@ const Home = () => {
               <span className="text">Enjoy the Finest Coffee Drinks.</span>
               <h2>Experience the best quality</h2>
               <Link to="/beranda" className="tombol-bawah-tulisan">
-                <i className="bx bx-home button"> Beranda </i>
+                <i className="bx bx-rocket button"> Beranda </i>
               </Link>
             </div>
           </div>
@@ -45,7 +45,7 @@ const Home = () => {
               <span className="text">Freshly Brewed, Just for You.</span>
               <h2>Explore our special menu</h2>
               <Link to="/beranda" className="tombol-bawah-tulisan">
-                <i className="bx bx-home button"> Beranda </i>
+                <i className="bx bx-rocket button"> Beranda </i>
               </Link>
             </div>
           </div>
@@ -55,7 +55,7 @@ const Home = () => {
               <span className="text">Relax with Every Sip.</span>
               <h2>Feel the warmth of coffee</h2>
               <Link to="/beranda" className="tombol-bawah-tulisan">
-                <i className="bx bx-home button"> Beranda </i>
+                <i className="bx bx-rocket button"> Beranda </i>
               </Link>
             </div>
           </div>
