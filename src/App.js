@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import Sidebar from "./components/pages/sidebar";
-import Home from "./components/pages/Home";
+import Dashboard from "./components/pages/Dashboard";
 
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
         {/* <Sidebar /> */}
         <div className="content">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Dashboard />} />
             {/* Tambahkan route lain di sini */}
           </Routes>
         </div>

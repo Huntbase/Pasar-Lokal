@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/isi.css";
+import "./css/Informasi.css";
 import slide1 from "../image/Home/slide_1.jpg";
 
 const isi = () => {
