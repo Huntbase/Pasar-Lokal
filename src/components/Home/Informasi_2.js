@@ -1,27 +1,32 @@
 import React from "react";
 import "./css/Informasi_2.css";
 
-const UnderwaterStats = () => {
+const LifeUnderWater = () => {
   return (
-    <div className="underwater-container">
-      <div className="content-box">
-        <h1 className="title">Dedicated to Life Under Water</h1>
-        <div className="stats-grid">
-          <div className="stat-item">
-            <h2 className="stat-number">543,210</h2>
-            <p className="stat-description">
-              children and teens engaged through online environmental education
-              programs
+    <div className="container">
+      <div className="overlay">
+        <h1 className="title">
+          DEDICATED TO LIFE <br />
+          UNDER WATER
+        </h1>
+        <div className="stats">
+          <div className="stat">
+            <p className="number">543,210</p>
+            <p className="description">
+              children and teens engaged <br />
+              through online environmental <br />
+              education programs
             </p>
           </div>
-          <div className="stat-item">
-            <h2 className="stat-number">6,543</h2>
-            <p className="stat-description">volunteers in 75 countries</p>
+          <div className="stat">
+            <p className="number">6,543</p>
+            <p className="description">volunteers in 75 countries</p>
           </div>
-          <div className="stat-item">
-            <h2 className="stat-number">4,321</h2>
-            <p className="stat-description">
-              tons of litter cleared in coastal cleanups
+          <div className="stat">
+            <p className="number">4,321</p>
+            <p className="description">
+              tons of litter cleared in coastal <br />
+              cleanups
             </p>
           </div>
         </div>
@@ -30,4 +35,4 @@ const UnderwaterStats = () => {
   );
 };
 
-export default UnderwaterStats;
+export default LifeUnderWater;
