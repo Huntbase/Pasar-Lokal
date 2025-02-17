@@ -1,0 +1,43 @@
+.beach-cleanup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 40px;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.text-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #111439;
+  line-height: 1.2;
+}
+
+.text-content .highlight {
+  color: #4a90e2;
+}
+
+.text-content p {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 500px;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  object-fit: cover;
+}
