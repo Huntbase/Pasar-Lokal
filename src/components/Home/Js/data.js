@@ -1,0 +1,67 @@
+// data.js
+export const pasarData = [
+  {
+    id: 1,
+    nama: "Pasar Bogor",
+    lokasi: "Jalan Suryakencana 18216",
+    kota: "Bogor",
+    gambar: "https://via.placeholder.com/300x200?text=Pasar+Bogor",
+    tipe: "pasar", // atau 'minimarket'
+  },
+  {
+    id: 2,
+    nama: "Alfamart",
+    lokasi: "Bogor Selatan",
+    kota: "Bogor",
+    gambar: "https://via.placeholder.com/300x200?text=Alfamart",
+    tipe: "minimarket",
+  },
+  {
+    id: 3,
+    nama: "Alfamart",
+    lokasi: "Bogor Selatan",
+    kota: "Bogor",
+    gambar: "https://via.placeholder.com/300x200?text=Alfamart",
+    tipe: "pasar",
+  },
+  {
+    id: 4,
+    nama: "Alfamart",
+    lokasi: "Bogor Selatan",
+    kota: "Bogor",
+    gambar: "https://via.placeholder.com/300x200?text=Alfamart",
+    tipe: "minimarket",
+  },
+  {
+    id: 5,
+    nama: "Alfamart",
+    lokasi: "Bogor Selatan",
+    kota: "Bogor",
+    gambar: "https://via.placeholder.com/300x200?text=Alfamart",
+    tipe: "minimarket",
+  },
+  {
+    id: 6,
+    nama: "Alfamart",
+    lokasi: "Bogor Selatan",
+    kota: "Bogor",
+    gambar: "https://via.placeholder.com/300x200?text=Alfamart",
+    tipe: "minimarket",
+  },
+  {
+    id: 7,
+    nama: "Alfamart",
+    lokasi: "Bogor Selatan",
+    kota: "Bogor",
+    gambar: "https://via.placeholder.com/300x200?text=Alfamart",
+    tipe: "minimarket",
+  },
+  {
+    id: 8,
+    nama: "Alfamart",
+    lokasi: "Bogor Selatan",
+    kota: "Bogor",
+    gambar: "https://via.placeholder.com/300x200?text=Alfamart",
+    tipe: "minimarket",
+  },
+];
