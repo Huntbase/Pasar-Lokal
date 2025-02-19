@@ -1,33 +1,26 @@
 import React from "react";
 import "./css/Informasi_2.css";
 
-const LifeUnderWater = () => {
+const Informasi = () => {
   return (
     <div className="container">
       <div className="overlay">
-        <h1 className="title">
-          DEDICATED TO LIFE <br />
-          UNDER WATER
-        </h1>
+        <h1 className="title">Daftar Mart</h1>
         <div className="stats">
           <div className="stat">
-            <p className="number">543,210</p>
-            <p className="description">
-              children and teens engaged <br />
-              through online environmental <br />
-              education programs
-            </p>
+            <p className="number">519</p>
+            Sebanyak <strong>519 mini market</strong> siap melayani kebutuhan
+            Anda di seluruh penjuru Bogor.
           </div>
           <div className="stat">
-            <p className="number">6,543</p>
-            <p className="description">volunteers in 75 countries</p>
+            <p className="number">?</p>
+            Bogor juga memiliki berbagai <strong>pasar modern</strong> yang
+            menawarkan pengalaman belanja nyaman dan lengkap.
           </div>
           <div className="stat">
-            <p className="number">4,321</p>
-            <p className="description">
-              tons of litter cleared in coastal <br />
-              cleanups
-            </p>
+            <p className="number">14</p>
+            Kota Bogor memiliki <strong>14 pasar tradisional</strong> yang kaya
+            akan budaya dan keanekaragaman produk lokal.
           </div>
         </div>
       </div>
@@ -35,4 +28,4 @@ const LifeUnderWater = () => {
   );
 };
 
-export default LifeUnderWater;
+export default Informasi;
