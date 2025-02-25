@@ -26,7 +26,7 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <Link to="/daftar-pasar">
+          <Link to="/Daftar">
             <i className="bx bx-store icon"></i> Daftar Pasar
           </Link>
         </li>

@@ -8,8 +8,8 @@ const PasarCard = ({ nama, lokasi, kota, gambar, tipe }) => {
       <img src={gambar} alt={nama} className="card-image" />
       <div className="card-content">
         <h3 className="card-title">{nama}</h3>
-        <p className="card-location">{lokasi}</p>
-        <p className="card-city">{kota}</p>
+        <p className="card-location">{kota}</p>
+        <p className="card-city">{lokasi}</p>
         <div className="card-bottom">
           <span className={`card-type ${tipe}`}>
             {tipe === "pasar" ? "Pasar Tradisional" : "Mini Market"}
