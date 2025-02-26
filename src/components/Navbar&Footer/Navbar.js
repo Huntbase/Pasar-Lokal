@@ -1,16 +1,27 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { pasarData } from "../Home/Js/data"; // Import yang benar
 import "./css/Navbar.css";
 
 function Navbar() {
-  const [query, setQuery] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
   const navigate = useNavigate();
 
-  const handleSearch = (e) => {
-    e.preventDefault(); // Mencegah refresh halaman
-    if (query.trim()) {
-      navigate(`/search?q=${encodeURIComponent(query)}`);
-    }
+  const handleSearch = (event) => {
+    setSearchQuery(event.target.value.toLowerCase());
+  };
+
+  const handleSearchSubmit = (event) => {
+    event.preventDefault();
+
+    if (!searchQuery.trim()) return;
+
+    // Filter data berdasarkan nama (bukan "name", tapi "nama")
+    const filteredResults = pasarData.filter((pasar) =>
+      pasar.nama.toLowerCase().includes(searchQuery)
+    );
+
+    navigate("/search-results", { state: { results: filteredResults } });
   };
 
   return (
@@ -40,15 +51,14 @@ function Navbar() {
           </Link>
         </li>
       </ul>
-
-      <form className="navbar-search" onSubmit={handleSearch}>
+      <form className="navbar-search" onSubmit={handleSearchSubmit}>
         <input
           type="text"
           placeholder="Cari pasar..."
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
+          value={searchQuery}
+          onChange={handleSearch}
         />
-        <button type="submit">Search</button>
+        <button type="submit">Cari</button>
       </form>
     </div>
   );

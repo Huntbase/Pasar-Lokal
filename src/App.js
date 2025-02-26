@@ -18,7 +18,7 @@ const App = () => {
             <Route path="/Daftar" element={<DaftarPasar />} />
             <Route path="/peta-pasar" element={<h1>Peta Pasar</h1>} />
             <Route path="/kontak" element={<h1>Kontak</h1>} />
-            <Route path="/search" element={<SearchResults />} />{" "}
+            <Route path="/search-results" element={<SearchResults />} />
             {/* Tambahkan route lain di sini */}
           </Routes>
         </div>
