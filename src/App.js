@@ -5,6 +5,7 @@ import Dashboard from "./components/pages/Dashboard";
 import DaftarPasar from "./components/pages/Daftar";
 // import PetaPasar from "./components/pages/PetaPasar"; // Pastikan ini sesuai
 // import Kontak from "./components/pages/Kontak"; // Pastikan ini ada
+import SearchResults from "./components/Navbar&Footer/SearchResults";
 
 const App = () => {
   return (
@@ -15,7 +16,9 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/Daftar" element={<DaftarPasar />} />
-            {/* Tambahkan route */}
+            <Route path="/peta-pasar" element={<h1>Peta Pasar</h1>} />
+            <Route path="/kontak" element={<h1>Kontak</h1>} />
+            <Route path="/search" element={<SearchResults />} />{" "}
             {/* Tambahkan route lain di sini */}
           </Routes>
         </div>

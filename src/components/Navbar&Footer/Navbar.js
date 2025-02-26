@@ -1,19 +1,18 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./css/Navbar.css";
-import { Link } from "react-router-dom";
 
 function Navbar() {
-  useEffect(() => {
-    const link = document.createElement("link");
-    link.rel = "stylesheet";
-    link.href =
-      "https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css";
-    document.head.appendChild(link);
+  const [query, setQuery] = useState("");
+  const navigate = useNavigate();
 
-    return () => {
-      document.head.removeChild(link);
-    };
-  }, []);
+  const handleSearch = (e) => {
+    e.preventDefault(); // Mencegah refresh halaman
+    if (query.trim()) {
+      navigate(`/search?q=${encodeURIComponent(query)}`);
+    }
+  };
+
   return (
     <div className="navbar">
       <div className="navbar-logo">
@@ -41,10 +40,16 @@ function Navbar() {
           </Link>
         </li>
       </ul>
-      <div className="navbar-search">
-        <input type="text" placeholder="Search.." />
+
+      <form className="navbar-search" onSubmit={handleSearch}>
+        <input
+          type="text"
+          placeholder="Cari pasar..."
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
         <button type="submit">Search</button>
-      </div>
+      </form>
     </div>
   );
 }
