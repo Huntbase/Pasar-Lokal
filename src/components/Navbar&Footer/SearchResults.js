@@ -11,25 +11,42 @@ function SearchResults() {
   return (
     <>
       <Navbar />
-      <div className="search-results">
+      <div className="search-results-container">
         <h2>Hasil Pencarian</h2>
         {results.length === 0 ? (
-          <p>Tidak ada pasar yang ditemukan.</p>
+          <p className="no-results">Tidak ada pasar yang ditemukan.</p>
         ) : (
-          <ul>
+          <div className="search-results-grid">
             {results.map((pasar) => (
-              <li key={pasar.id}>
-                <img src={pasar.gambar} alt={pasar.nama} width="100" />
-                <p>{pasar.nama}</p>
-                <p>Lokasi: {pasar.lokasi}</p>
-                <Link to={pasar.GoogleMaps} target="_blank">
-                  Lihat di Google Maps
-                </Link>
-              </li>
+              <div key={pasar.id} className="pasar-card">
+                <img
+                  src={pasar.gambar}
+                  alt={pasar.nama}
+                  className="pasar-image"
+                />
+                <div className="pasar-details">
+                  <h3>{pasar.nama}</h3>
+                  <p>
+                    <strong>Lokasi:</strong> {pasar.lokasi}
+                  </p>
+                  <p>
+                    <strong>Jam Operasional:</strong> {pasar.JamOperasional}
+                  </p>
+                  <Link
+                    to={pasar.GoogleMaps}
+                    target="_blank"
+                    className="map-button"
+                  >
+                    Lihat di Google Maps
+                  </Link>
+                </div>
+              </div>
             ))}
-          </ul>
+          </div>
         )}
-        <Link to="/">Kembali ke Beranda</Link>
+        <Link to="/" className="back-button">
+          Kembali ke Beranda
+        </Link>
       </div>
       <Footer />
     </>

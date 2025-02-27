@@ -91,3 +91,5 @@ export const pasarData = [
     tipe: "pasar",
   },
 ];
+
+export default pasarData;
