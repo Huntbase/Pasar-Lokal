@@ -2,7 +2,7 @@
 import React from "react";
 import "./css/PasarCard.css"; // CSS khusus untuk kartu (opsional)
 
-const PasarCard = ({ nama, lokasi, kota, gambar, tipe }) => {
+const PasarCard = ({ nama, lokasi, kota, gambar, type }) => {
   return (
     <div className="card-container">
       <img src={gambar} alt={nama} className="card-image" />
@@ -11,8 +11,8 @@ const PasarCard = ({ nama, lokasi, kota, gambar, tipe }) => {
         <p className="card-location">{kota}</p>
         <p className="card-city">{lokasi}</p>
         <div className="card-bottom">
-          <span className={`card-type ${tipe}`}>
-            {tipe === "pasar" ? "Pasar Tradisional" : "Mini Market"}
+          <span className={`card-type ${type}`}>
+            {type === "pasar" ? "Pasar Tradisional" : "Mini Market"}
           </span>
           <button className="card-button">Lihat Detail</button>
         </div>

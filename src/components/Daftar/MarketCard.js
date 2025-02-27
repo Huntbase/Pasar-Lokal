@@ -1,7 +1,7 @@
 import React from "react";
 import "./css/list.css";
 
-const MarketCard = ({ nama, lokasi, kota, gambar, tipe }) => {
+const MarketCard = ({ nama, lokasi, kota, gambar, type }) => {
   return (
     <div className="market-card">
       <img src={gambar} alt={nama} className="market-image" />
@@ -10,8 +10,8 @@ const MarketCard = ({ nama, lokasi, kota, gambar, tipe }) => {
         <p>{kota}</p>
         <p>{lokasi}</p>
         <div className="card-bottom">
-          <span className={`market-type ${tipe}`}>
-            {tipe === "pasar" ? "Pasar Tradisional" : "Mini Market"}
+          <span className={`market-type ${type}`}>
+            {type === "pasar" ? "Pasar Tradisional" : "Mini Market"}
           </span>
           <button className="market-button">Lihat Detail</button>
         </div>

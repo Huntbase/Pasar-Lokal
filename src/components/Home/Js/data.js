@@ -8,7 +8,7 @@ export const pasarData = [
       "https://static.republika.co.id/uploads/images/inpicture_slide/036481400-1688106898-830-556.jpg",
     JamOperasional: "07:00 - 11:00",
     GoogleMaps: "asdisadidsi",
-    tipe: "pasar",
+    type: "pasar",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ export const pasarData = [
     gambar: "https://example.com/pasar-anyar.jpg",
     JamOperasional: "06:00 - 12:00",
     GoogleMaps: "link_google_maps_pasar_anyar",
-    tipe: "minimarket",
+    type: "minimarket",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ export const pasarData = [
     gambar: "https://example.com/pasar-ciawi.jpg",
     JamOperasional: "05:30 - 13:00",
     GoogleMaps: "link_google_maps_pasar_ciawi",
-    tipe: "pasar",
+    type: "pasar",
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ export const pasarData = [
     gambar: "https://example.com/pasar-kebon-kembang.jpg",
     JamOperasional: "06:00 - 14:00",
     GoogleMaps: "link_google_maps_pasar_kebon_kembang",
-    tipe: "pasar",
+    type: "pasar",
   },
   {
     id: 5,
@@ -48,7 +48,7 @@ export const pasarData = [
     gambar: "https://example.com/pasar-cibinong.jpg",
     JamOperasional: "05:00 - 13:00",
     GoogleMaps: "link_google_maps_pasar_cibinong",
-    tipe: "pasar",
+    type: "pasar",
   },
   {
     id: 6,
@@ -58,7 +58,7 @@ export const pasarData = [
     gambar: "https://example.com/pasar-gunung-batu.jpg",
     JamOperasional: "06:30 - 12:30",
     GoogleMaps: "link_google_maps_pasar_gunung_batu",
-    tipe: "pasar",
+    type: "pasar",
   },
   {
     id: 7,
@@ -68,7 +68,7 @@ export const pasarData = [
     gambar: "https://example.com/pasar-jambu-dua.jpg",
     JamOperasional: "07:00 - 11:30",
     GoogleMaps: "link_google_maps_pasar_jambu_dua",
-    tipe: "pasar",
+    type: "pasar",
   },
   {
     id: 8,
@@ -78,7 +78,7 @@ export const pasarData = [
     gambar: "https://example.com/pasar-sindangbarang.jpg",
     JamOperasional: "05:30 - 12:00",
     GoogleMaps: "link_google_maps_pasar_sindangbarang",
-    tipe: "pasar",
+    type: "pasar",
   },
   {
     id: 9,
@@ -88,7 +88,7 @@ export const pasarData = [
     gambar: "https://example.com/pasar-sindangbarang.jpg",
     JamOperasional: "05:30 - 12:00",
     GoogleMaps: "link_google_maps_pasar_sindangbarang",
-    tipe: "pasar",
+    type: "pasar",
   },
 ];
 
