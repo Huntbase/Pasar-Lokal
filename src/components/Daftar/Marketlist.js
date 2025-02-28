@@ -30,20 +30,22 @@ const MarketList = () => {
 
       {/* Filter */}
       <div className="filter-buttons">
-        {["Semua", "Pasar Tradisional", "Pasar Modern", "Minimarket"].map(
-          (type) => (
-            <button
-              key={type}
-              onClick={() => {
-                setFilterType(type);
-                setCurrentPage(1); // Reset ke halaman pertama setiap kali filter berubah
-              }}
-              className={filterType === type ? "active" : ""}
-            >
-              {type}
-            </button>
-          )
-        )}
+        {["Semua", "pasar", "minimarket"].map((type) => (
+          <button
+            key={type}
+            onClick={() => {
+              setFilterType(type);
+              setCurrentPage(1);
+            }}
+            className={filterType === type ? "active" : ""}
+          >
+            {type === "pasar"
+              ? "Pasar"
+              : type === "minimarket"
+              ? "Minimarket"
+              : "Semua"}
+          </button>
+        ))}
       </div>
 
       {/* Grid Pasar */}
