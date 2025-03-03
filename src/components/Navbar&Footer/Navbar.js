@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { pasarData } from "../Home/Js/data"; // Import yang benar
+import { pasarData } from "../Home/Js/data";
 import "./css/Navbar.css";
 
 function Navbar() {

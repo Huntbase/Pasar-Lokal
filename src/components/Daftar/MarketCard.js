@@ -1,8 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./css/list.css";
 
-const MarketCard = ({ nama, lokasi, kota, gambar, type }) => {
-  console.log(`Class applied: market-type ${type}`);
+const MarketCard = ({ id, nama, lokasi, kota, gambar, type }) => {
+  const navigate = useNavigate(); // Untuk navigasi antar halaman
 
   return (
     <div className="market-card">
@@ -13,10 +14,14 @@ const MarketCard = ({ nama, lokasi, kota, gambar, type }) => {
         <p>{lokasi}</p>
         <div className="card-bottom">
           <span className={`market-type ${type}`}>
-            {console.log("Rendered Type:", type)}
             {type === "pasar" ? "Pasar Tradisional" : "Minimarket"}
           </span>
-          <button className="market-button">Lihat Detail</button>
+          <button
+            className="market-button"
+            onClick={() => navigate(`/market/${id}`)}
+          >
+            Lihat Detail
+          </button>
         </div>
       </div>
     </div>
