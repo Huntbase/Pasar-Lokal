@@ -1,8 +1,10 @@
 // src/components/PasarCard.jsx
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./css/PasarCard.css"; // CSS khusus untuk kartu (opsional)
 
-const PasarCard = ({ nama, lokasi, kota, gambar, type }) => {
+const PasarCard = ({ id, nama, lokasi, kota, gambar, type }) => {
+  const navigate = useNavigate(); // Untuk navigasi antar halaman
   return (
     <div className="card-container">
       <img src={gambar} alt={nama} className="card-image" />
@@ -14,7 +16,12 @@ const PasarCard = ({ nama, lokasi, kota, gambar, type }) => {
           <span className={`card-type ${type}`}>
             {type === "pasar" ? "Pasar Tradisional" : "Mini Market"}
           </span>
-          <button className="card-button">Lihat Detail</button>
+          <button
+            className="card-button"
+            onClick={() => navigate(`/market/${id}`)}
+          >
+            Lihat Detail
+          </button>
         </div>
       </div>
     </div>
