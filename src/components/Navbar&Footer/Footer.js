@@ -1,72 +1,123 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./css/Footer.css";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
+        {/* Branding dan Sosial Media */}
         <div className="footer-branding">
-          <h2>Superchat - The name says it all</h2>
+          <h2>PasarKita - Temukan Pasar Terbaik di Kotamu</h2>
           <div className="footer-socials">
-            <i className="bx bx-home icon"></i>
-            <i className="bx bx-home icon"></i>
-            <i className="bx bx-home icon"></i>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <i className="bx bxl-facebook icon"></i>
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
+              <i className="bx bxl-twitter icon"></i>
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <i className="bx bxl-instagram icon"></i>
+            </a>
           </div>
+
           <div className="footer-contact">
             <p>
-              <i className="bx bx-home icon">+44 1224 051727</i>
+              <i className="bx bx-phone icon"></i> +62 812 3456 7890
             </p>
             <p>
-              <i className="bx bx-home icon">+44 1224 051727</i>
+              <i className="bx bx-envelope icon"></i> info@pasarkita.com
             </p>
           </div>
         </div>
+
+        {/* Links Section */}
         <div className="footer-links">
           <div className="footer-section">
-            <h4>Product</h4>
+            <h4>Informasi Pasar</h4>
             <ul>
-              <li>WhatsApp Business</li>
-              <li>WhatsApp Newsletter</li>
-              <li>Automations</li>
-              <li>Integrations</li>
-              <li>Universal Inbox</li>
-              <li>Webchat</li>
-              <li>Team Chat</li>
-              <li>Reviews</li>
-              <li>Mobile App</li>
-              <li>Desktop App</li>
-            </ul>
-          </div>
-          <div className="footer-section">
-            <h4>Company</h4>
-            <ul>
-              <li>About Us</li>
-              <li>Prices</li>
               <li>
-                Career <span className="hiring">We are hiring!</span>
+                <Link to="/daftar-pasar">Daftar Pasar</Link>
               </li>
-              <li>Contact</li>
-              <li>Affiliate Program</li>
-              <li>Press</li>
-              <li>System Status</li>
+              <li>
+                <Link to="/jenis-pasar">Jenis Pasar</Link>
+              </li>
+              <li>
+                <Link to="/jam-operasional">Jam Operasional</Link>
+              </li>
+              <li>
+                <Link to="/fasilitas">Fasilitas Pasar</Link>
+              </li>
+              <li>
+                <Link to="/pedagang-produk">Pedagang & Produk</Link>
+              </li>
             </ul>
           </div>
           <div className="footer-section">
-            <h4>Resources</h4>
+            <h4>Tentang Kami</h4>
             <ul>
-              <li>Blog</li>
-              <li>Success Stories</li>
-              <li>Superchat Comparison</li>
-              <li>Free Tools</li>
-              <li>Free eBooks</li>
-              <li>Messaging Report 2023</li>
+              <li>
+                <Link to="/profil">Profil PasarKita</Link>
+              </li>
+              <li>
+                <Link to="/visi-misi">Visi & Misi</Link>
+              </li>
+              <li>
+                <Link to="/kerja-sama">Kerja Sama</Link>
+              </li>
+              <li>
+                <Link to="/kontak">Kontak</Link>
+              </li>
+              <li>
+                <Link to="/karir">Karir</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-section">
+            <h4>Sumber Daya</h4>
+            <ul>
+              <li>
+                <Link to="/berita">Berita Pasar</Link>
+              </li>
+              <li>
+                <Link to="/artikel">Artikel & Tips</Link>
+              </li>
+              <li>
+                <Link to="/regulasi">Regulasi Pasar</Link>
+              </li>
+              <li>
+                <Link to="/faq">Bantuan & FAQ</Link>
+              </li>
+              <li>
+                <Link to="/laporan">Laporan Tahunan</Link>
+              </li>
             </ul>
           </div>
         </div>
       </div>
+
+      {/* Footer Bottom */}
       <div className="footer-bottom">
-        <p>© 2024 SuperX GmbH | Imprint | Data Privacy | Terms of Use</p>
-        <p>Made with ♡ in Berlin</p>
+        <p>
+          © 2024 PasarKita | <Link to="/privacy">Kebijakan Privasi</Link> |{" "}
+          <Link to="/terms">Syarat & Ketentuan</Link>
+        </p>
+        <p>Dibuat dengan ♡ untuk pasar Indonesia</p>
       </div>
     </footer>
   );

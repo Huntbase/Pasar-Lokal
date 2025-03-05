@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import pasarData from "../Home/Js/data";
+import pasarData from "../../Data/data.js";
 import "./css/detail.css";
 import Navbar from "../Navbar&Footer/Navbar.js";
 import Footer from "../Navbar&Footer/Footer.js";

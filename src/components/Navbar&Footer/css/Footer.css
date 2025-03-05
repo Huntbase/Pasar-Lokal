@@ -16,6 +16,9 @@
 .footer-branding {
   max-width: 300px;
 }
+.footer-branding h2 {
+  color: white;
+}
 
 .footer-socials {
   display: flex;

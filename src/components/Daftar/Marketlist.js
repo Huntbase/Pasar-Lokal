@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import MarketCard from "./MarketCard";
-import { pasarData } from "../Home/Js/data"; // Sesuaikan path dengan lokasi file data
+import { pasarData } from "../../Data/data"; // Sesuaikan path dengan lokasi file data
 import "./css/list.css";
 
 const MarketList = () => {

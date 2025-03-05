@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Dashboard from "./components/pages/Dashboard";
 import DaftarPasar from "./components/pages/Daftar";
 import MarketDetail from "./components/Daftar/MarketDetail";
-// import PetaPasar from "./components/pages/PetaPasar"; // Pastikan ini sesuai
+import FAQ from "./components/pages/FAQ";
 // import Kontak from "./components/pages/Kontak"; // Pastikan ini ada
 import SearchResults from "./components/Navbar&Footer/SearchResults";
 
@@ -17,7 +17,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/Daftar" element={<DaftarPasar />} />
-            <Route path="/peta-pasar" element={<h1>Peta Pasar</h1>} />
+            <Route path="/FAQ" element={<FAQ />} />
             <Route path="/kontak" element={<h1>Kontak</h1>} />
             <Route path="/search-results" element={<SearchResults />} />
             <Route path="/market/:id" element={<MarketDetail />} />

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { pasarData } from "../Home/Js/data";
+import { pasarData } from "../../Data/data";
 import "./css/Navbar.css";
 
 function Navbar() {
@@ -41,8 +41,8 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <Link to="/peta-pasar">
-            <i className="bx bx-map icon"></i> Peta Pasar
+          <Link to="/FAQ">
+            <i className="bx bx-comment-detail"></i> FAQ Pasar
           </Link>
         </li>
         <li>

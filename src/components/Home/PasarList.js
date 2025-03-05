@@ -1,7 +1,7 @@
 // src/components/PasarList.jsx
 import React, { useState } from "react";
 import PasarCard from "./PasarCard";
-import { pasarData } from "./Js/data"; // atau data langsung di sini
+import { pasarData } from "../../Data/data"; // atau data langsung di sini
 
 const ITEMS_PER_PAGE = 6; // jumlah kartu per halaman
 
