@@ -16,7 +16,7 @@
 
 /* Branding Section */
 .footer-branding {
-  max-width: 300px;
+  max-width: 500px;
 }
 
 .footer-branding h2 {
@@ -50,7 +50,6 @@
 .footer-links {
   display: flex;
   gap: 40px;
-  flex-wrap: wrap;
 }
 
 .footer-section {
