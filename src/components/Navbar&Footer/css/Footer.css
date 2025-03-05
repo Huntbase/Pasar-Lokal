@@ -11,11 +11,14 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
+/* Branding Section */
 .footer-branding {
   max-width: 300px;
 }
+
 .footer-branding h2 {
   color: white;
 }
@@ -27,15 +30,31 @@
   margin: 10px 0;
 }
 
+.footer-socials a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-socials a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Section */
 .footer-contact p {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
+/* Links Section */
 .footer-links {
   display: flex;
   gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  min-width: 150px;
 }
 
 .footer-section h4 {
@@ -51,6 +70,16 @@
   margin-bottom: 5px;
 }
 
+.footer-section a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+/* Hiring Badge */
 .hiring {
   background-color: #007bff;
   color: white;
@@ -60,9 +89,19 @@
   margin-left: 5px;
 }
 
+/* Bottom Footer */
 .footer-bottom {
   text-align: center;
   margin-top: 20px;
   border-top: 1px solid white;
   padding-top: 10px;
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
 }
