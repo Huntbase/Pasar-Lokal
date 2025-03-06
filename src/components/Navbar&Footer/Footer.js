@@ -52,10 +52,10 @@ const Footer = () => {
             <h4>Informasi Pasar</h4>
             <ul>
               <li>
-                <Link to="/daftar-pasar">Daftar Pasar</Link>
+                <Link to="/Daftar">Daftar Pasar</Link>
               </li>
               <li>
-                <Link to="/jenis-pasar">Jenis Pasar</Link>
+                <Link to="/Daftar">Jenis Pasar</Link>
               </li>
               <li>
                 <Link to="/jam-operasional">Jam Operasional</Link>

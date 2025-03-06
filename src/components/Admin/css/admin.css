@@ -1,0 +1,141 @@
+/* admin.css */
+.admin-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.admin-container h2,
+.admin-container h3 {
+  color: #111439;
+}
+
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.admin-form input,
+.admin-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.admin-form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.admin-form button:hover {
+  background-color: #0056b3;
+}
+
+/* List Pasar */
+.market-list {
+  list-style: none;
+  padding: 0;
+}
+
+.market-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #f8f8f9;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.market-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.market-item h4 {
+  margin: 0;
+  color: #111439;
+}
+
+.market-item p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.market-item button {
+  padding: 6px 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.market-item button:first-of-type {
+  background-color: #28a745;
+  color: white;
+}
+
+.market-item button:first-of-type:hover {
+  background-color: #218838;
+}
+
+.market-item button:last-of-type {
+  background-color: #dc3545;
+  color: white;
+}
+
+.market-item button:last-of-type:hover {
+  background-color: #c82333;
+}
+.logout-btn {
+  padding: 8px 15px;
+  background-color: #dc3545;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #c82333;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+  .market-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .market-image {
+    width: 100%;
+    height: auto;
+  }
+}
