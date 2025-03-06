@@ -27,7 +27,7 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar-logo">
-        <h1>Temu Mart</h1>
+        <h1>PASAR SILA</h1>
       </div>
       <ul>
         <li>

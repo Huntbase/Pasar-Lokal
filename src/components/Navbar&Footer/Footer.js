@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-container">
         {/* Branding dan Sosial Media */}
         <div className="footer-branding">
-          <h2>PasarKita - Temukan Pasar Terbaik di Kotamu</h2>
+          <h2>PasarSila - Temukan Pasar Terbaik di Kotamu</h2>
           <div className="footer-socials">
             <a
               href="https://facebook.com"
@@ -114,7 +114,7 @@ const Footer = () => {
       {/* Footer Bottom */}
       <div className="footer-bottom">
         <p>
-          © 2024 PasarKita | <Link to="/privacy">Kebijakan Privasi</Link> |{" "}
+          © 2025 PasarSila | <Link to="/privacy">Kebijakan Privasi</Link> |{" "}
           <Link to="/terms">Syarat & Ketentuan</Link>
         </p>
         <p>Dibuat dengan ♡ untuk pasar Indonesia</p>
