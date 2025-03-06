@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
-import slide1 from "../image/Home/slide_1.jpg";
-import slide2 from "../image/Home/slide_2.jpg";
 import slide3 from "../image/Home/slide_3.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -29,8 +27,8 @@ const Home = () => {
           <div className="slide">
             <img src={slide1} alt="Slide 1" className="image" />
             <div className="image-data">
-              <span className="text">Enjoy the Finest Coffee Drinks.</span>
-              <h2>Experience the best quality</h2>
+              <span className="text">Temu Mart</span>
+              <h2>Temukan Informasi yang kamu inginkan</h2>
               <Link to="/beranda" className="tombol-bawah-tulisan">
                 <i className="bx bx-rocket button"> Beranda </i>
               </Link>
@@ -39,8 +37,8 @@ const Home = () => {
           <div className="slide">
             <img src={slide2} alt="Slide 2" className="image" />
             <div className="image-data">
-              <span className="text">Freshly Brewed, Just for You.</span>
-              <h2>Explore our special menu</h2>
+              <span className="text">Temu Mart</span>
+              <h2>Pasar Tradisional dan Minimarket</h2>
               <Link to="/beranda" className="tombol-bawah-tulisan">
                 <i className="bx bx-rocket button"> Beranda </i>
               </Link>
@@ -49,8 +47,8 @@ const Home = () => {
           <div className="slide">
             <img src={slide3} alt="Slide 3" className="image" />
             <div className="image-data">
-              <span className="text">Relax with Every Sip.</span>
-              <h2>Feel the warmth of coffee</h2>
+              <span className="text">Temu Mart</span>
+              <h2>Menyediakan berbagai Informasi</h2>
               <Link to="/beranda" className="tombol-bawah-tulisan">
                 <i className="bx bx-rocket button"> Beranda </i>
               </Link>
