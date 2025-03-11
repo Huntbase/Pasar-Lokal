@@ -1,8 +1,8 @@
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
 import "./css/SearchResults.css";
-import Navbar from "../Navbar&Footer/Navbar.js";
-import Footer from "../Navbar&Footer/Footer.js";
+import Navbar from "./Navbar.js";
+import Footer from "./Footer.js";
 
 function SearchResults() {
   const location = useLocation();
