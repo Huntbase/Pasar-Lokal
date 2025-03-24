@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
-import slide1 from "../image/Home/slide_1.jpg";
-import slide2 from "../image/Home/slide_2.jpg";
 import slide3 from "../image/Home/slide_3.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
