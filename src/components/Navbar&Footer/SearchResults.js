@@ -44,9 +44,6 @@ function SearchResults() {
             ))}
           </div>
         )}
-        <Link to="/" className="back-button">
-          Kembali ke Beranda
-        </Link>
       </div>
       <Footer />
     </>

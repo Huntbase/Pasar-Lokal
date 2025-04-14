@@ -50,11 +50,6 @@ function Navbar() {
             <i className="bx bx-phone icon"></i> Kontak
           </Link>
         </li>
-        <li>
-          <Link to="/Login">
-            <i className="bx bx-phone icon"></i> Login
-          </Link>
-        </li>
       </ul>
       <form className="navbar-search" onSubmit={handleSearchSubmit}>
         <input

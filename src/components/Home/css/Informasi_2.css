@@ -4,7 +4,8 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url("../../image/Home/slide_1.jpg") no-repeat center center/cover;
+  background: url("../../image/gambar1/gambar2.jpeg") no-repeat center
+    center/cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,6 +41,7 @@
 }
 
 .number {
+  color: black;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 1rem;
   font-size: 3rem;
