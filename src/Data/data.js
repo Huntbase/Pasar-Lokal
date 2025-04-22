@@ -7,7 +7,7 @@ export const pasarData = [
     gambar:
       "https://static.republika.co.id/uploads/images/inpicture_slide/036481400-1688106898-830-556.jpg",
     JamOperasional: "07:00 - 11:00",
-    GoogleMaps: "asdisadidsi",
+    GoogleMaps: "https://maps.app.goo.gl/3gJkV3D2r82WHv45A",
     type: "pasar",
   },
   {
@@ -17,7 +17,7 @@ export const pasarData = [
     kota: "Bogor",
     gambar: "https://bogor-kita.com/wp-content/uploads/2022/03/pasar-ciawi.jpg",
     JamOperasional: "06:00 - 12:00",
-    GoogleMaps: "link_google_maps_pasar_anyar",
+    GoogleMaps: "https://maps.app.goo.gl/SGdtPchbj6MyiQ2A6",
     type: "minimarket",
   },
   {
@@ -27,7 +27,7 @@ export const pasarData = [
     kota: "Bogor",
     gambar: "https://bogor-kita.com/wp-content/uploads/2022/03/pasar-ciawi.jpg",
     JamOperasional: "05:30 - 13:00",
-    GoogleMaps: "link_google_maps_pasar_ciawi",
+    GoogleMaps: "https://maps.app.goo.gl/SwAbqHMTHFih4hp17",
     type: "pasar",
   },
   {
@@ -38,7 +38,7 @@ export const pasarData = [
     gambar:
       "https://lovelybogor.com/wp-content/uploads/2015/11/Pasar-Tradisional-Di-Kota-Bogor-Pasar-Kebon-Kembang.jpg",
     JamOperasional: "06:00 - 14:00",
-    GoogleMaps: "link_google_maps_pasar_kebon_kembang",
+    GoogleMaps: "https://maps.app.goo.gl/3amRXjE3egHGG9xH8",
     type: "pasar",
   },
   {
@@ -49,7 +49,7 @@ export const pasarData = [
     gambar:
       "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitl0wYqgt38XtHEvCkM5isePn4cOJeYvDFZeHi0WQP7Cj_903gbsOopwKwyDVU2W__XAiFAfIWvb4NELYCQ0nkTFG1A0wsBwVXQwkddz42sV11vuee_eqiZsMtW7_zjHxRmHKnQYoo86s/s1600/IMG_20170517_172258.jpg",
     JamOperasional: "05:00 - 13:00",
-    GoogleMaps: "link_google_maps_pasar_cibinong",
+    GoogleMaps: "https://maps.app.goo.gl/iZbbfsQ1s9D7Wfr69",
     type: "pasar",
   },
   {
@@ -60,7 +60,7 @@ export const pasarData = [
     gambar:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRth-PILiBmjIndzJNYbJKarObiNA7u7KQnvQ&s",
     JamOperasional: "06:30 - 12:30",
-    GoogleMaps: "link_google_maps_pasar_gunung_batu",
+    GoogleMaps: "https://maps.app.goo.gl/8qdfhdPAmXcF582b6",
     type: "pasar",
   },
   {
@@ -71,7 +71,7 @@ export const pasarData = [
     gambar:
       "https://asset.kompas.com/crops/y2HXxeJEcE5KmjK2o_Kw_xoCZR8=/0x0:0x0/1200x800/data/photo/2024/06/27/667cf8925648a.jpeg",
     JamOperasional: "07:00 - 11:30",
-    GoogleMaps: "link_google_maps_pasar_jambu_dua",
+    GoogleMaps: "https://maps.app.goo.gl/TuhPiTQLdH31Xb6v5",
     type: "pasar",
   },
   {
@@ -79,19 +79,9 @@ export const pasarData = [
     nama: "Pasar Sindangbarang",
     lokasi: "Jalan Sindangbarang No. 25",
     kota: "Bogor",
-    gambar: "https://example.com/pasar-sindangbarang.jpg",
+    gambar: "https://i.imgur.com/TeJ7iEd.png",
     JamOperasional: "05:30 - 12:00",
-    GoogleMaps: "link_google_maps_pasar_sindangbarang",
-    type: "pasar",
-  },
-  {
-    id: 9,
-    nama: "Pasar Sindangbarang",
-    lokasi: "Jalan Sindangbarang No. 25",
-    kota: "Bogor",
-    gambar: "https://example.com/pasar-sindangbarang.jpg",
-    JamOperasional: "05:30 - 12:00",
-    GoogleMaps: "link_google_maps_pasar_sindangbarang",
+    GoogleMaps: "https://maps.app.goo.gl/aEsCZtubech2szjF8",
     type: "pasar",
   },
 ];

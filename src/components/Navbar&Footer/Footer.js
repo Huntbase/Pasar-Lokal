@@ -55,16 +55,7 @@ const Footer = () => {
                 <Link to="/Daftar">Daftar Pasar</Link>
               </li>
               <li>
-                <Link to="/Daftar">Jenis Pasar</Link>
-              </li>
-              <li>
-                <Link to="/jam-operasional">Jam Operasional</Link>
-              </li>
-              <li>
-                <Link to="/fasilitas">Fasilitas Pasar</Link>
-              </li>
-              <li>
-                <Link to="/pedagang-produk">Pedagang & Produk</Link>
+                <Link to="/faq">Bantuan & FAQ</Link>
               </li>
             </ul>
           </div>
@@ -78,33 +69,7 @@ const Footer = () => {
                 <Link to="/visi-misi">Visi & Misi</Link>
               </li>
               <li>
-                <Link to="/kerja-sama">Kerja Sama</Link>
-              </li>
-              <li>
                 <Link to="/kontak">Kontak</Link>
-              </li>
-              <li>
-                <Link to="/karir">Karir</Link>
-              </li>
-            </ul>
-          </div>
-          <div className="footer-section">
-            <h4>Sumber Daya</h4>
-            <ul>
-              <li>
-                <Link to="/berita">Berita Pasar</Link>
-              </li>
-              <li>
-                <Link to="/artikel">Artikel & Tips</Link>
-              </li>
-              <li>
-                <Link to="/regulasi">Regulasi Pasar</Link>
-              </li>
-              <li>
-                <Link to="/faq">Bantuan & FAQ</Link>
-              </li>
-              <li>
-                <Link to="/laporan">Laporan Tahunan</Link>
               </li>
             </ul>
           </div>

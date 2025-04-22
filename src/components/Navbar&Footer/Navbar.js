@@ -16,7 +16,6 @@ function Navbar() {
 
     if (!searchQuery.trim()) return;
 
-    // Filter data berdasarkan nama (bukan "name", tapi "nama")
     const filteredResults = pasarData.filter((pasar) =>
       pasar.nama.toLowerCase().includes(searchQuery)
     );

@@ -126,9 +126,10 @@
 
   .navbar ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     align-items: center;
+    justify-content: center;
   }
 
   .navbar ul li {
@@ -136,7 +137,7 @@
   }
 
   .navbar-search {
-    width: 100%;
+    width: 40%;
     justify-content: center;
     margin-top: 10px;
   }
