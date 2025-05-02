@@ -15,14 +15,14 @@
   --primary-color-light: #f6f5ff;
   --toggle-color: #ddd;
   --text-color: #707070;
-  --highlight-color: #10a37f;
+  --highlight-color: #2a3132;
   --tran-03: all 0.3s ease;
 }
 
 /* === Navbar Styling === */
 .navbar {
   width: 100%;
-  background-color: #333;
+  background-color: #336b87;
   padding: 15px 75px;
   display: flex;
   justify-content: space-between;
@@ -32,7 +32,7 @@
 .navbar .navbar-logo {
   font-size: 18px;
   font-weight: 600;
-  color: var(--highlight-color);
+  color: #66a5ad;
 }
 
 .navbar ul {

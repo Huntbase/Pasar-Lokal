@@ -15,10 +15,11 @@ export const pasarData = [
     nama: "Pasar Anyar",
     lokasi: "Jalan Dewi Sartika No. 10",
     kota: "Bogor",
-    gambar: "https://bogor-kita.com/wp-content/uploads/2022/03/pasar-ciawi.jpg",
+    gambar:
+      "https://tangerangekspres.disway.id/upload/48981b065e437a0138c94750365d01b5.jpeg",
     JamOperasional: "06:00 - 12:00",
     GoogleMaps: "https://maps.app.goo.gl/SGdtPchbj6MyiQ2A6",
-    type: "minimarket",
+    type: "pasar",
   },
   {
     id: 3,
