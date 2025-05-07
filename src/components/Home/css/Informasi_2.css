@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 
 .container {
   position: relative;
@@ -10,15 +11,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #ffffff;
 }
 
 .title {
-  font-family: "Poppins", serif;
   position: absolute;
-  top: 4rem;
+  top: 1.5rem;
+  left: 9rem;
+  font-family: "Poppins", serif;
   font-size: 2rem;
   font-weight: bold;
+  color: black;
 }
 
 .overlay {
@@ -26,6 +29,7 @@
   border-radius: 0.625rem;
   max-width: 80%;
   width: 100%;
+  background-color: rgba(255, 255, 255, 0.144); /* Latar semi-putih */
 }
 
 .stats {
@@ -36,12 +40,19 @@
 
 .stat {
   flex: 1;
-  text-align: left;
-  padding: 0.5rem;
+  text-align: justify;
+  font-weight: bold;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+  color: #ffffff;
+}
+
+.stat:hover {
+  transform: scale(1.03);
 }
 
 .number {
-  color: cyan;
+  color: #161717;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 1rem;
   font-size: 3rem;
@@ -50,7 +61,7 @@
 
 .description {
   font-family: "Open Sans", sans-serif;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -60,6 +71,11 @@
   .stats {
     flex-direction: column;
     align-items: center;
+  }
+  .title {
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
   }
 
   .stat {
