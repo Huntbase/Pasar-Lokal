@@ -29,7 +29,7 @@ const Home = () => {
           <div className="slide">
             <img src={slide1} alt="Slide 1" className="image" />
             <div className="image-data">
-              <span className="text">Pasar Kita</span>
+              <span className="text">Pasar Lokal</span>
               <h2>Jelajahi Dunia Pasar di Ujung Jari Anda!</h2>
               <Link to="/Daftar" className="tombol-bawah-tulisan">
                 <i className="bx bx-rocket button"> Lihat Daftar Pasar </i>
@@ -39,7 +39,7 @@ const Home = () => {
           <div className="slide">
             <img src={slide2} alt="Slide 2" className="image" />
             <div className="image-data">
-              <span className="text">Pasar Kita</span>
+              <span className="text">Pasar Lokal</span>
               <h2>
                 Dari Pasar Tradisional hingga Minimarket Modern Semua Informasi
                 dalam Satu Tempat!
@@ -52,10 +52,10 @@ const Home = () => {
           <div className="slide">
             <img src={slide3} alt="Slide 3" className="image" />
             <div className="image-data">
-              <span className="text">Pasar Kita</span>
+              <span className="text">Pasar Lokal</span>
               <h2>
                 Butuh Info Pasar? Kami Punya Jawabannya! Akses mudah & cepat
-                hanya di Pasar Kita.
+                hanya di Pasar Lokal.
               </h2>
               <Link to="/Daftar" className="tombol-bawah-tulisan">
                 <i className="bx bx-rocket button"> Mulai Sekarang </i>
