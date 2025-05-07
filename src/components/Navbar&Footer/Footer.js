@@ -66,9 +66,6 @@ const Footer = () => {
                 <Link to="/MarketProfile">Profil PasarKita</Link>
               </li>
               <li>
-                <Link to="/visi-misi">Visi & Misi</Link>
-              </li>
-              <li>
                 <Link to="/kontak">Kontak</Link>
               </li>
             </ul>
@@ -78,11 +75,7 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="footer-bottom">
-        <p>
-          © 2025 PasarSila | <Link to="/privacy">Kebijakan Privasi</Link> |{" "}
-          <Link to="/terms">Syarat & Ketentuan</Link>
-        </p>
-        <p>Dibuat dengan ♡ untuk pasar Indonesia</p>
+        <p> © 2025 PasarSila | Dibuat dengan ♡ untuk pasar Indonesia</p>
       </div>
     </footer>
   );

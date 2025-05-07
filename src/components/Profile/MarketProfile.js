@@ -30,6 +30,39 @@ const MarketProfile = () => {
           pedagang pasar tradisional.
         </p>
       </section>
+
+      <section className="vision-mission">
+        <h2>Visi</h2>
+        <p>
+          Mewujudkan akses informasi pasar tradisional yang mudah, transparan,
+          dan terintegrasi secara digital untuk mendukung kemajuan ekonomi lokal
+          dan pelayanan publik yang lebih baik.
+        </p>
+
+        <h2>Misi</h2>
+        <ul>
+          <li>
+            Menyediakan informasi akurat dan terkini tentang pasar-pasar
+            tradisional di Indonesia.
+          </li>
+          <li>
+            Mengembangkan platform yang ramah pengguna dan dapat diakses oleh
+            seluruh lapisan masyarakat.
+          </li>
+          <li>
+            Mendorong digitalisasi layanan publik terkait pengelolaan dan
+            promosi pasar rakyat.
+          </li>
+          <li>
+            Menjalin kolaborasi dengan pengelola pasar dan pemerintah daerah
+            untuk memperbarui data secara berkelanjutan.
+          </li>
+          <li>
+            Mendukung pedagang dan pelaku UMKM dalam mempromosikan lokasi usaha
+            mereka kepada masyarakat luas.
+          </li>
+        </ul>
+      </section>
     </div>
   );
 };
