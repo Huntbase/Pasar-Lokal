@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-container">
         {/* Branding dan Sosial Media */}
         <div className="footer-branding">
-          <h2>PasarSila - Temukan Pasar Terbaik di Kotamu</h2>
+          <h2>PasarLokal - Temukan Pasar Terbaik di Kotamu</h2>
           <div className="footer-socials">
             <a
               href="https://facebook.com"

@@ -27,7 +27,7 @@
   border-radius: 0.625rem;
   max-width: 80%;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.25); /* Latar semi-putih */
+  background-color: rgba(255, 255, 255, 0.6); /* Latar semi-putih */
 }
 
 .stats {
@@ -85,5 +85,34 @@
 
   .description {
     font-size: 0.5rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
+    height: auto; /* Lebih fleksibel daripada 100vh di HP kecil */
+  }
+
+  .overlay {
+    max-width: 95%;
+    padding: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .number {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+
+  .stat {
+    padding: 0.5rem;
   }
 }

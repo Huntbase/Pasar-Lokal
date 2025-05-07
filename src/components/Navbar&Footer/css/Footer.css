@@ -117,6 +117,9 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .footer-branding {
+    text-align: center;
+  }
   .footer-socials {
     justify-content: center;
   }
@@ -137,10 +140,35 @@ body {
 }
 
 @media (max-width: 480px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .footer-branding h2 {
+    font-size: 1.2rem;
+  }
+
+  .footer-socials {
+    font-size: 1.3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .footer-section h4 {
     font-size: 1rem;
+    margin-bottom: 8px;
   }
-  .footer-branding h2 {
-    font-size: 1.1rem;
+
+  .footer-section li {
+    font-size: 0.9rem;
+  }
+
+  .footer-contact p {
+    font-size: 0.9rem;
+    gap: 6px;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
   }
 }

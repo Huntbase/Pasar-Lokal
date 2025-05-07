@@ -26,7 +26,7 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar-logo">
-        <h1>PASAR Lokal</h1>
+        <h1>PASAR LOKAL</h1>
       </div>
       <ul>
         <li>

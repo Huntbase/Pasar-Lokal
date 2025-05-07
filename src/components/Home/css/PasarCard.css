@@ -48,20 +48,24 @@
 }
 
 /* Label tipe pasar/minimarket */
+/* Label tipe pasar/minimarket */
 .card-type {
-  font-size: 0.8rem;
-  padding: 4px 8px;
-  border-radius: 4px;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 12px;
   text-transform: capitalize;
+  font-weight: 600;
+  display: inline-block;
   color: #fff;
+  white-space: nowrap;
 }
 
 .card-type.pasar {
-  background-color: #4caf50; /* hijau untuk pasar tradisional */
+  background-color: #2e7d32; /* Lebih gelap & profesional */
 }
 
 .card-type.minimarket {
-  background-color: #f44336; /* merah atau warna modern lain */
+  background-color: #d32f2f; /* Warna merah elegan */
 }
 
 /* Tombol detail */
@@ -69,30 +73,59 @@
   background-color: #007bff;
   color: #fff;
   border: none;
-  padding: 6px 12px;
-  border-radius: 4px;
+  padding: 6px 14px;
+  border-radius: 20px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3);
 }
 
 .card-button:hover {
   background-color: #0056b3;
+  transform: translateY(-1px);
 }
 
-@media (max-width: 992px) {
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* default: 4 kolom */
+  gap: 1.5rem;
+  padding: 1rem;
+}
+/* Untuk layar <= 1200px (laptop kecil / tablet landscape) */
+@media (max-width: 1200px) {
   .card-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
+/* Untuk layar <= 768px (tablet / HP besar) */
 @media (max-width: 768px) {
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 }
 
+/* Untuk layar <= 480px (HP kecil) */
 @media (max-width: 480px) {
   .card-grid {
     grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-button {
+    padding: 5px 10px;
+    font-size: 0.75rem;
+  }
+
+  .card-type {
+    font-size: 0.7rem;
+    padding: 2px 8px;
   }
 }

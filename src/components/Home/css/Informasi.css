@@ -27,6 +27,7 @@
   font-size: 1rem;
   color: #333;
   margin-top: 10px;
+  text-align: justify;
 }
 
 .image-container {
@@ -41,4 +42,55 @@
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
   object-fit: cover;
+}
+
+/* Untuk tablet & HP besar (≤768px) */
+@media screen and (max-width: 768px) {
+  .beach-cleanup {
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .text-content {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .text-content h1 {
+    font-size: 2rem;
+  }
+
+  .text-content p {
+    font-size: 0.95rem;
+  }
+
+  .image-container {
+    justify-content: center;
+  }
+
+  .image-container img {
+    max-width: 90%;
+  }
+}
+
+/* Untuk HP kecil (≤480px) */
+@media screen and (max-width: 480px) {
+  .beach-cleanup {
+    padding: 20px 15px;
+  }
+
+  .text-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .text-content p {
+    font-size: 0.9rem;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    border-top-right-radius: 30%;
+    border-top-left-radius: 30%;
+  }
 }

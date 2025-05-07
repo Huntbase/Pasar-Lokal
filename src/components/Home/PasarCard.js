@@ -7,7 +7,7 @@ const PasarCard = ({ id, nama, lokasi, kota, gambar, type }) => {
   const navigate = useNavigate(); // Untuk navigasi antar halaman
   return (
     <div className="card-container">
-      <img src={gambar} alt={nama} className="card-image" />
+      <img src={gambar} alt={`Gambar dari ${nama}`} className="card-image" />
       <div className="card-content">
         <h3 className="card-title">{nama}</h3>
         <p className="card-location">{kota}</p>
@@ -17,7 +17,7 @@ const PasarCard = ({ id, nama, lokasi, kota, gambar, type }) => {
             {type === "pasar" ? "Pasar Tradisional" : "Mini Market"}
           </span>
           <button
-            className="card-button"
+            className={`card-button ${type}`}
             onClick={() => navigate(`/market/${id}`)}
           >
             Lihat Detail
