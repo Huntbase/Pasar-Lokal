@@ -29,30 +29,36 @@ const Home = () => {
           <div className="slide">
             <img src={slide1} alt="Slide 1" className="image" />
             <div className="image-data">
-              <span className="text">Temu Mart</span>
-              <h2>Temukan Informasi yang kamu inginkan</h2>
-              <Link to="/beranda" className="tombol-bawah-tulisan">
-                <i className="bx bx-rocket button"> Beranda </i>
+              <span className="text">Pasar Sila</span>
+              <h2>Jelajahi Dunia Pasar di Ujung Jari Anda!</h2>
+              <Link to="/Daftar" className="tombol-bawah-tulisan">
+                <i className="bx bx-rocket button"> Lihat Daftar Pasar </i>
               </Link>
             </div>
           </div>
           <div className="slide">
             <img src={slide2} alt="Slide 2" className="image" />
             <div className="image-data">
-              <span className="text">Temu Mart</span>
-              <h2>Pasar Tradisional dan Minimarket</h2>
-              <Link to="/beranda" className="tombol-bawah-tulisan">
-                <i className="bx bx-rocket button"> Beranda </i>
+              <span className="text">Pasar Sila</span>
+              <h2>
+                Dari Pasar Tradisional hingga Minimarket Modern Semua Informasi
+                dalam Satu Tempat!
+              </h2>
+              <Link to="/Daftar" className="tombol-bawah-tulisan">
+                <i className="bx bx-rocket button"> Jelajahi Sekarang </i>
               </Link>
             </div>
           </div>
           <div className="slide">
             <img src={slide3} alt="Slide 3" className="image" />
             <div className="image-data">
-              <span className="text">Temu Mart</span>
-              <h2>Menyediakan berbagai Informasi</h2>
-              <Link to="/beranda" className="tombol-bawah-tulisan">
-                <i className="bx bx-rocket button"> Beranda </i>
+              <span className="text">Pasar Sila</span>
+              <h2>
+                Butuh Info Pasar? Kami Punya Jawabannya! Akses mudah & cepat
+                hanya di Pasar Sila.
+              </h2>
+              <Link to="/Daftar" className="tombol-bawah-tulisan">
+                <i className="bx bx-rocket button"> Mulai Sekarang </i>
               </Link>
             </div>
           </div>

@@ -1,0 +1,72 @@
+/* MarketProfile.css */
+
+:root {
+  --primary: #89abe3;
+  --text: #111439;
+  --bg: #f8f8f9;
+  --card-bg: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.08);
+}
+
+body {
+  background-color: var(--bg);
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.market-profile {
+  background-color: var(--card-bg);
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  border-radius: 24px;
+  box-shadow: 0 8px 20px var(--shadow);
+  color: var(--text);
+  transition: box-shadow 0.3s ease;
+}
+
+.market-profile:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.title {
+  font-size: 2.5rem;
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #333;
+  text-align: justify;
+}
+
+.features,
+.target-users {
+  margin-bottom: 2.5rem;
+  background-color: #f0f4fb;
+  padding: 1.5rem;
+  border-left: 6px solid var(--primary);
+  border-radius: 12px;
+}
+
+.features h2,
+.target-users h2 {
+  color: var(--primary);
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+ul {
+  list-style: square inside;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+}

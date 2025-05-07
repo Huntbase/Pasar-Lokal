@@ -60,12 +60,12 @@
   height: 2px;
   left: 0;
   bottom: -5px;
-  background-color: var(--highlight-color);
+  background-color: #66a5ad;
   transition: var(--tran-03);
 }
 
 .navbar ul li a:hover {
-  color: var(--highlight-color);
+  color: #66a5ad;
 }
 
 .navbar ul li a:hover::before {
@@ -108,7 +108,7 @@
 }
 
 .navbar-search button:hover {
-  background-color: #088c6e;
+  background-color: #66a5ad;
 }
 
 /* === Tambahkan Media Query untuk Responsivitas === */

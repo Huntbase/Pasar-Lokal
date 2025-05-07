@@ -63,7 +63,7 @@ const Footer = () => {
             <h4>Tentang Kami</h4>
             <ul>
               <li>
-                <Link to="/profil">Profil PasarKita</Link>
+                <Link to="/MarketProfile">Profil PasarKita</Link>
               </li>
               <li>
                 <Link to="/visi-misi">Visi & Misi</Link>

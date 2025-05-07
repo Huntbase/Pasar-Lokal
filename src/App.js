@@ -8,6 +8,7 @@ import FAQ from "./components/pages/FAQ";
 import Contact from "./components/pages/Contact";
 import AdminPasar from "./components/Admin/admin";
 import Login from "./components/pages/Login";
+import MarketProfile from "./components/pages/Profile";
 // import Kontak from "./components/pages/Kontak"; // Pastikan ini ada
 import SearchResults from "./components/Navbar&Footer/SearchResults";
 
@@ -26,6 +27,7 @@ const App = () => {
             <Route path="/market/:id" element={<MarketDetail />} />
             <Route path="/login" element={<Login />} />
             <Route path="/admin" element={<AdminPasar />} />
+            <Route path="/MarketProfile" element={<MarketProfile />} />
             {/* Tambahkan route lain di sini */}
           </Routes>
         </div>
