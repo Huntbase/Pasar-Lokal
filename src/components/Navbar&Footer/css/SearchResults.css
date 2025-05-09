@@ -7,7 +7,7 @@
 }
 
 /* Judul */
-h2 {
+.search-results-container h2 {
   font-size: 2rem;
   margin-bottom: 20px;
   color: #111439;
@@ -15,11 +15,19 @@ h2 {
 
 /* Jika hasil kosong */
 .no-results {
+  text-align: center;
+  margin: 4rem auto;
+  color: #333;
   font-size: 1.2rem;
-  color: #555;
 }
 
-/* Grid untuk menampilkan hasil dalam bentuk kartu */
+.no-results-image {
+  width: 180px;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+/* Grid hasil pencarian */
 .search-results-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -36,7 +44,6 @@ h2 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efek hover */
 .pasar-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -87,17 +94,16 @@ h2 {
 /* Tombol kembali */
 .back-button {
   display: inline-block;
-  padding: 5px;
-  background: #f8f8f9;
-  color: #111439;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
   text-decoration: none;
-  border-radius: 8px;
-  border: 2px solid #111439;
   font-weight: bold;
-  transition: background 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .back-button:hover {
-  background: #111439;
-  color: white;
+  background-color: #0056b3;
 }

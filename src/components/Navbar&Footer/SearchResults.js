@@ -1,11 +1,12 @@
 import React from "react";
-import { useLocation, Link } from "react-router-dom";
+import { useLocation, Link, useNavigate } from "react-router-dom"; // Tambahkan useNavigate
 import "./css/SearchResults.css";
 import Navbar from "../Navbar&Footer/Navbar.js";
 import Footer from "../Navbar&Footer/Footer.js";
 
 function SearchResults() {
   const location = useLocation();
+  const navigate = useNavigate(); // Inisialisasi navigate
   const results = location.state?.results || [];
 
   return (
@@ -14,7 +15,18 @@ function SearchResults() {
       <div className="search-results-container">
         <h2>Hasil Pencarian</h2>
         {results.length === 0 ? (
-          <p className="no-results">Tidak ada pasar yang ditemukan.</p>
+          <div className="no-results">
+            <img
+              src="/assets/no-results.png"
+              alt="No results"
+              className="no-results-image"
+            />
+            <h3>Oops! Pasar tidak ditemukan 😢</h3>
+            <p>Coba periksa kembali kata kunci pencarian kamu.</p>
+            <Link to="/" className="back-button">
+              Kembali ke Beranda
+            </Link>
+          </div>
         ) : (
           <div className="search-results-grid">
             {results.map((pasar) => (
@@ -32,13 +44,12 @@ function SearchResults() {
                   <p>
                     <strong>Jam Operasional:</strong> {pasar.JamOperasional}
                   </p>
-                  <Link
-                    to={pasar.GoogleMaps}
-                    target="_blank"
+                  <button
                     className="map-button"
+                    onClick={() => navigate(`/market/${pasar.id}`)}
                   >
-                    Lihat di Google Maps
-                  </Link>
+                    Lihat Detail
+                  </button>
                 </div>
               </div>
             ))}
