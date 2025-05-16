@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useCallback, useMemo } from "react";
+import { useNavigate } from "react-router-dom";
 import { db } from "../../firebase";
 import {
   collection,
@@ -11,6 +12,8 @@ import {
 import "./css/admin.css";
 
 const AdminPasar = () => {
+  const navigate = useNavigate();
+
   const [data, setData] = useState([]);
   const [editId, setEditId] = useState(null);
   const [form, setForm] = useState({});
@@ -119,6 +122,9 @@ const AdminPasar = () => {
 
   return (
     <div className="admin-container">
+      <button className="back-button" onClick={() => navigate(-1)}>
+        ← Kembali
+      </button>
       <h2 className="admin-title">Admin - Edit & Kelola Pasar</h2>
 
       {loading && <p>Memuat data...</p>}

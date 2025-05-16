@@ -87,3 +87,17 @@ a.map-link:hover {
   background-color: #f44336;
   color: white;
 }
+
+.back-button {
+  background-color: #eee;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.back-button:hover {
+  background-color: #ddd;
+}
