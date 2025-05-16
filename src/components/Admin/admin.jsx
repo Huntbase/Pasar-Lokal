@@ -1,5 +1,13 @@
-import React, { useEffect, useState } from "react";
-import pasarDataDefault from "../../Data/data";
+import React, { useEffect, useState, useCallback, useMemo } from "react";
+import { db } from "../../firebase";
+import {
+  collection,
+  getDocs,
+  addDoc,
+  updateDoc,
+  deleteDoc,
+  doc,
+} from "firebase/firestore";
 import "./css/admin.css";
 
 const AdminPasar = () => {
@@ -15,21 +23,32 @@ const AdminPasar = () => {
     GoogleMaps: "",
     type: "pasar",
   });
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  // Load data
-  useEffect(() => {
-    const saved = localStorage.getItem("pasarData");
-    if (saved) {
-      setData(JSON.parse(saved));
-    } else {
-      localStorage.setItem("pasarData", JSON.stringify(pasarDataDefault));
-      setData(pasarDataDefault);
+  const pasarCollection = useMemo(() => collection(db, "pasar"), []);
+
+  const fetchData = useCallback(async () => {
+    try {
+      setLoading(true);
+      const snapshot = await getDocs(pasarCollection);
+      const pasarList = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      setData(pasarList);
+      setError("");
+    } catch (err) {
+      setError("Gagal mengambil data pasar.");
+      console.error(err);
+    } finally {
+      setLoading(false);
     }
-  }, []);
+  }, [pasarCollection]); // ✅ sekarang ini tidak error lagi
 
   useEffect(() => {
-    localStorage.setItem("pasarData", JSON.stringify(data));
-  }, [data]);
+    fetchData();
+  }, [fetchData]);
 
   const handleEditClick = (pasar) => {
     setEditId(pasar.id);
@@ -44,81 +63,90 @@ const AdminPasar = () => {
     setNewForm({ ...newForm, [e.target.name]: e.target.value });
   };
 
-  const handleSave = () => {
-    const updatedData = data.map((item) => (item.id === editId ? form : item));
-    setData(updatedData);
-    setEditId(null);
+  const handleSave = async () => {
+    try {
+      setLoading(true);
+      const pasarRef = doc(db, "pasar", editId);
+      await updateDoc(pasarRef, form);
+      setEditId(null);
+      setError("");
+      fetchData();
+    } catch (err) {
+      setError("Gagal menyimpan perubahan.");
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
   };
 
-  const handleDelete = (id) => {
-    const filteredData = data.filter((item) => item.id !== id);
-    setData(filteredData);
+  const handleDelete = async (id) => {
+    try {
+      setLoading(true);
+      const pasarRef = doc(db, "pasar", id);
+      await deleteDoc(pasarRef);
+      setError("");
+      fetchData();
+    } catch (err) {
+      setError("Gagal menghapus pasar.");
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
   };
 
-  const handleAdd = () => {
-    const newId = data.length > 0 ? Math.max(...data.map((d) => d.id)) + 1 : 1;
-    const newData = { ...newForm, id: newId };
-    setData([...data, newData]);
-    setNewForm({
-      nama: "",
-      lokasi: "",
-      kota: "",
-      gambar: "",
-      JamOperasional: "",
-      GoogleMaps: "",
-      type: "pasar",
-    });
+  const handleAdd = async () => {
+    try {
+      setLoading(true);
+      await addDoc(pasarCollection, newForm);
+      setNewForm({
+        nama: "",
+        lokasi: "",
+        kota: "",
+        gambar: "",
+        JamOperasional: "",
+        GoogleMaps: "",
+        type: "pasar",
+      });
+      setError("");
+      fetchData();
+    } catch (err) {
+      setError("Gagal menambahkan pasar.");
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <div className="admin-container">
       <h2 className="admin-title">Admin - Edit & Kelola Pasar</h2>
 
-      {/* Form Tambah Pasar */}
+      {loading && <p>Memuat data...</p>}
+      {error && <p className="error-message">{error}</p>}
+
       <div className="add-form">
         <h3>Tambah Pasar Baru</h3>
-        <input
-          name="nama"
-          value={newForm.nama}
-          onChange={handleNewChange}
-          placeholder="Nama Pasar"
-        />
-        <input
-          name="lokasi"
-          value={newForm.lokasi}
-          onChange={handleNewChange}
-          placeholder="Lokasi"
-        />
-        <input
-          name="kota"
-          value={newForm.kota}
-          onChange={handleNewChange}
-          placeholder="Kota"
-        />
-        <input
-          name="gambar"
-          value={newForm.gambar}
-          onChange={handleNewChange}
-          placeholder="Link Gambar"
-        />
-        <input
-          name="JamOperasional"
-          value={newForm.JamOperasional}
-          onChange={handleNewChange}
-          placeholder="Jam Operasional"
-        />
-        <input
-          name="GoogleMaps"
-          value={newForm.GoogleMaps}
-          onChange={handleNewChange}
-          placeholder="Link Google Maps"
-        />
-        <button className="admin-button" onClick={handleAdd}>
+        {[
+          "nama",
+          "lokasi",
+          "kota",
+          "gambar",
+          "JamOperasional",
+          "GoogleMaps",
+        ].map((field) => (
+          <input
+            key={field}
+            name={field}
+            value={newForm[field]}
+            onChange={handleNewChange}
+            placeholder={field}
+          />
+        ))}
+        <button className="admin-button" onClick={handleAdd} disabled={loading}>
           Tambah Pasar
         </button>
       </div>
 
-      {/* Daftar Pasar */}
       {data.map((pasar) => (
         <div key={pasar.id} className="market-card">
           {editId === pasar.id ? (
@@ -139,7 +167,11 @@ const AdminPasar = () => {
                 value={form.GoogleMaps}
                 onChange={handleChange}
               />
-              <button className="edit-btn" onClick={handleSave}>
+              <button
+                className="edit-btn"
+                onClick={handleSave}
+                disabled={loading}
+              >
                 Simpan
               </button>
               <button className="delete-btn" onClick={() => setEditId(null)}>
@@ -175,6 +207,7 @@ const AdminPasar = () => {
               <button
                 className="delete-btn"
                 onClick={() => handleDelete(pasar.id)}
+                disabled={loading}
               >
                 Hapus
               </button>
