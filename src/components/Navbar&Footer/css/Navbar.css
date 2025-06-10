@@ -27,12 +27,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: var(--tran-03);
 }
 
-.navbar .navbar-logo {
-  font-size: 18px;
-  font-weight: 600;
-  color: #66a5ad;
+.logo-image {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
 }
 
 .navbar ul {
@@ -84,16 +93,23 @@
   border: 1px solid var(--highlight-color);
   outline: none;
   font-size: 17px;
-  margin-right: 10px;
   width: 150px;
   background-color: #222;
   color: #fff;
-  transition: var(--tran-03);
+  transition: var(--tran-03), box-shadow 0.3s ease;
 }
 
 .navbar-search input:focus {
-  width: 200px;
+  width: 200px; /* Membesar saat fokus */
   background-color: #111;
+  border-color: #66a5ad; /* Warna border berubah */
+  box-shadow: 0 0 8px #66a5ad; /* Glow halus */
+}
+
+.navbar-search input:hover {
+  border-color: #66a5ad;
+  box-shadow: 0 0 5px #66a5ad66;
+  cursor: text;
 }
 
 .navbar-search button {
@@ -111,8 +127,22 @@
   background-color: #66a5ad;
 }
 
-/* === Tambahkan Media Query untuk Responsivitas === */
+/* === Menu Toggle (Hamburger) === */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+  transition: var(--tran-03);
+}
+
+/* === Responsive Styling === */
 @media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
   .navbar {
     padding: 10px 20px;
     flex-direction: column;
@@ -126,12 +156,17 @@
   }
 
   .navbar ul {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    display: none;
+    flex-direction: column;
     width: 100%;
     gap: 10px;
     margin-bottom: 10px;
+  }
+
+  .navbar ul.active {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .navbar ul li {
@@ -145,27 +180,25 @@
   .navbar-search {
     width: 100%;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 8px;
   }
 
   .navbar-search input {
-    width: 90%;
+    width: 70%;
     font-size: 16px;
     margin-right: 0;
   }
 
   .navbar-search button {
-    width: 90%;
+    width: auto; /* button menyesuaikan isi */
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .navbar {
-    flex-direction: column;
-    align-items: center;
     padding: 10px 15px;
   }
 
@@ -180,25 +213,22 @@
     margin-bottom: 10px;
   }
 
-  .navbar ul li {
-    margin: 0;
-  }
-
   .navbar-search {
     width: 100%;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row; /* ubah jadi row juga */
+    align-items: center;
     gap: 5px;
   }
 
   .navbar-search input {
-    width: 100%;
+    width: 70%;
     font-size: 16px;
     margin-right: 0;
   }
 
   .navbar-search button {
-    width: 100%;
+    width: auto;
     font-size: 16px;
   }
 }

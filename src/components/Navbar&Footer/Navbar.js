@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { pasarData } from "../../Data/data";
+import gambar from "../../Asset/image4.png";
 import "./css/Navbar.css";
 
 function Navbar() {
   const [searchQuery, setSearchQuery] = useState("");
+  const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
 
   const handleSearch = (event) => {
@@ -13,7 +15,6 @@ function Navbar() {
 
   const handleSearchSubmit = (event) => {
     event.preventDefault();
-
     if (!searchQuery.trim()) return;
 
     const filteredResults = pasarData.filter((pasar) =>
@@ -23,12 +24,23 @@ function Navbar() {
     navigate("/search-results", { state: { results: filteredResults } });
   };
 
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <div className="navbar">
       <div className="navbar-logo">
-        <h1>PASAR LOKAL</h1>
+        <Link to="/">
+          <img src={gambar} alt="Logo Pasar Lokal" className="logo-image" />
+        </Link>
       </div>
-      <ul>
+
+      <div className="menu-toggle" onClick={toggleMenu}>
+        &#9776;
+      </div>
+
+      <ul className={menuOpen ? "active" : ""}>
         <li>
           <Link to="/">
             <i className="bx bx-home icon"></i> Beranda
@@ -50,6 +62,7 @@ function Navbar() {
           </Link>
         </li>
       </ul>
+
       <form className="navbar-search" onSubmit={handleSearchSubmit}>
         <input
           type="text"
