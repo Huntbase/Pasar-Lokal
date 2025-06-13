@@ -25,19 +25,20 @@ function Navbar() {
   };
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+    setMenuOpen((prev) => !prev); // contoh jika pakai React state
   };
 
   return (
     <div className="navbar">
-      <div className="navbar-logo">
-        <Link to="/">
-          <img src={gambar} alt="Logo Pasar Lokal" className="logo-image" />
-        </Link>
-      </div>
-
-      <div className="menu-toggle" onClick={toggleMenu}>
-        &#9776;
+      <div className="navbar-top">
+        <div className="navbar-logo">
+          <Link to="/">
+            <img src={gambar} alt="Logo Pasar Lokal" className="logo-image" />
+          </Link>
+        </div>
+        <div className="menu-toggle" onClick={toggleMenu}>
+          &#9776;
+        </div>
       </div>
 
       <ul className={menuOpen ? "active" : ""}>

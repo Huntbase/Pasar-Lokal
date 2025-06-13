@@ -219,7 +219,6 @@ tr:hover {
 
 /* Styling untuk Map */
 .map-container {
-  height: 400px;
   border-radius: 10px;
   overflow: hidden;
   margin-top: 20px;

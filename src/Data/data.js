@@ -220,6 +220,38 @@ export const pasarData = [
     jumlahNonKiosNonLos: "-",
     nomorTeleponUnit: "-",
   },
+  {
+    id: 15,
+    nama: "Indomaret Muara Raya",
+    lokasi: "Jl. Kapten Yusuf No.5",
+    kota: "Bogor Barat",
+    gambar: "/asset/indomaret1.jpg",
+    JamOperasional: "05:00 - 12:00",
+    GoogleMaps:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3359.5134371586255!2d106.792501!3d-6.609975500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5b6773849b5%3A0x6d24bc38d939c8a9!2sIndomaret%20Muara%20Raya!5e1!3m2!1sid!2sid!4v1749798395376!5m2!1sid!2sid",
+    type: "minimarket",
+  },
+  {
+    id: 16,
+    nama: "Indomaret SPBU Plaza Permata",
+    lokasi: "Ruko Spbu Jl. Kh. Soleh Iskandar",
+    kota: "Bogor",
+    gambar: "/asset/indomaret1.jpg",
+    JamOperasional: "05:00 - 12:00",
+    GoogleMaps:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3359.5134371586255!2d106.792501!3d-6.609975500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5b6773849b5%3A0x6d24bc38d939c8a9!2sIndomaret%20Muara%20Raya!5e1!3m2!1sid!2sid!4v1749798395376!5m2!1sid!2sid",
+    type: "minimarket",
+  },
+  {
+    id: 17,
+    nama: "Indomaret Tajur 3",
+    lokasi: "Jl. Raya Tajur",
+    kota: "Bogor Barat",
+    gambar: "/asset/indomaret1.jpg",
+    JamOperasional: "05:00 - 12:00",
+    GoogleMaps: "",
+    type: "minimarket",
+  },
 ];
 
 export default pasarData;

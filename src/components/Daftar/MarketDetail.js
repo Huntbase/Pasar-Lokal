@@ -44,6 +44,8 @@ const MarketDetail = () => {
     nomorTeleponUnit,
   } = market;
 
+  const isMinimarket = type === "minimarket";
+
   return (
     <>
       <Navbar />
@@ -52,8 +54,14 @@ const MarketDetail = () => {
           <button className="back-button" onClick={() => navigate(-1)}>
             <i className="bx bx-left-arrow-alt"></i>
           </button>
-          <img src={gambar} alt={`Foto ${nama}`} className="detail-image" />
+          <img
+            src={gambar || "/assets/placeholder.jpg"}
+            alt={`Foto ${nama}`}
+            className="detail-image"
+            onError={(e) => (e.target.src = "/assets/placeholder.jpg")}
+          />
         </div>
+
         <article className="detail-info">
           <h2>{nama}</h2>
 
@@ -61,55 +69,75 @@ const MarketDetail = () => {
             <strong>Lokasi:</strong>
           </p>
           <p>{lokasi}</p>
+
           <p>
             <strong>Kota:</strong>
           </p>
           <p>{kota}</p>
+
           <p>
             <strong>Jam Operasional:</strong>
           </p>
           <p>{JamOperasional}</p>
-          <p>
-            <strong>Luas Tanah:</strong>
-          </p>
-          <p>{luasTanah}</p>
-          <p>
-            <strong>Luas Bangunan:</strong>
-          </p>
-          <p>{bangunan}</p>
-          <p>
-            <strong>Komoditi Utama:</strong>
-          </p>
-          <p>{komoditiUtama}</p>
-          <p>
-            <strong>Jumlah Kios:</strong>
-          </p>
-          <p>{jumlahKios}</p>
-          <p>
-            <strong>Jumlah Los:</strong>
-          </p>
-          <p>{jumlahLos}</p>
-          <p>
-            <strong>Jumlah Non Kios/Los:</strong>
-          </p>
-          <p>{jumlahNonKiosNonLos}</p>
+
+          {!isMinimarket && (
+            <>
+              <p>
+                <strong>Luas Tanah:</strong>
+              </p>
+              <p>{luasTanah}</p>
+
+              <p>
+                <strong>Luas Bangunan:</strong>
+              </p>
+              <p>{bangunan}</p>
+
+              <p>
+                <strong>Komoditi Utama:</strong>
+              </p>
+              <p>{komoditiUtama}</p>
+
+              <p>
+                <strong>Jumlah Kios:</strong>
+              </p>
+              <p>{jumlahKios}</p>
+
+              <p>
+                <strong>Jumlah Los:</strong>
+              </p>
+              <p>{jumlahLos}</p>
+
+              <p>
+                <strong>Jumlah Non Kios/Los:</strong>
+              </p>
+              <p>{jumlahNonKiosNonLos}</p>
+              <p>
+                <strong>No. Telepon Unit:</strong>
+              </p>
+              <p>{nomorTeleponUnit}</p>
+            </>
+          )}
+
           <p>
             <strong>Tipe:</strong>
           </p>
           <p>{type === "pasar" ? "Pasar Tradisional" : "Minimarket"}</p>
-          <p>
-            <strong>No. Telepon Unit:</strong>
-          </p>
-          <p>{nomorTeleponUnit}</p>
 
-          <a
-            href={GoogleMaps}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="detail-button"
-          >
-            Buka di Google Maps
-          </a>
+          <p>
+            <strong>Lokasi di Peta:</strong>
+          </p>
+          <div className="map-container">
+            <iframe
+              src={GoogleMaps}
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title={`Peta lokasi ${nama}`}
+            ></iframe>
+          </div>
         </article>
       </section>
       <Footer />

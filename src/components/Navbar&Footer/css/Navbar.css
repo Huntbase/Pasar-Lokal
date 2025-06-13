@@ -16,7 +16,9 @@
   --toggle-color: #ddd;
   --text-color: #707070;
   --highlight-color: #2a3132;
+  --accent-color: #66a5ad;
   --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
 }
 
 /* === Navbar Styling === */
@@ -33,9 +35,15 @@
   transition: var(--tran-03);
 }
 
+.navbar-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
 .logo-image {
   height: 50px;
-  width: auto;
   object-fit: contain;
 }
 
@@ -48,18 +56,15 @@
   list-style: none;
   display: flex;
   gap: 25px;
-}
-
-.navbar ul li {
-  position: relative;
+  transition: var(--tran-04);
 }
 
 .navbar ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
-  transition: var(--tran-03);
   position: relative;
+  transition: var(--tran-03);
 }
 
 .navbar ul li a::before {
@@ -69,12 +74,12 @@
   height: 2px;
   left: 0;
   bottom: -5px;
-  background-color: #66a5ad;
-  transition: var(--tran-03);
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
 }
 
 .navbar ul li a:hover {
-  color: #66a5ad;
+  color: var(--accent-color);
 }
 
 .navbar ul li a:hover::before {
@@ -85,6 +90,8 @@
 .navbar-search {
   display: flex;
   align-items: center;
+  gap: 10px;
+  transition: var(--tran-03);
 }
 
 .navbar-search input {
@@ -96,18 +103,18 @@
   width: 150px;
   background-color: #222;
   color: #fff;
-  transition: var(--tran-03), box-shadow 0.3s ease;
+  transition: width 0.4s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .navbar-search input:focus {
-  width: 200px; /* Membesar saat fokus */
+  width: 200px;
   background-color: #111;
-  border-color: #66a5ad; /* Warna border berubah */
-  box-shadow: 0 0 8px #66a5ad; /* Glow halus */
+  border-color: var(--accent-color);
+  box-shadow: 0 0 8px var(--accent-color);
 }
 
 .navbar-search input:hover {
-  border-color: #66a5ad;
+  border-color: var(--accent-color);
   box-shadow: 0 0 5px #66a5ad66;
   cursor: text;
 }
@@ -120,79 +127,66 @@
   border: none;
   border-radius: 25px;
   cursor: pointer;
-  transition: var(--tran-03);
+  transition: background-color 0.3s ease;
 }
 
 .navbar-search button:hover {
-  background-color: #66a5ad;
+  background-color: var(--accent-color);
 }
 
 /* === Menu Toggle (Hamburger) === */
 .menu-toggle {
   display: none;
-  font-size: 28px;
-  color: #fff;
-  cursor: pointer;
-  user-select: none;
-  transition: var(--tran-03);
 }
 
 /* === Responsive Styling === */
 @media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px 20px;
+  }
+
+  .navbar-top {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 35px;
+  }
+
   .menu-toggle {
     display: block;
-  }
-
-  .navbar {
-    padding: 10px 20px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar-logo {
-    font-size: 20px;
-    margin-bottom: 10px;
-    text-align: center;
+    cursor: pointer;
   }
 
   .navbar ul {
-    display: none;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    gap: 10px;
-    margin-bottom: 10px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: max-height 0.4s ease, opacity 0.3s ease, transform 0.3s ease;
   }
 
   .navbar ul.active {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .navbar ul li {
-    margin: 0;
-  }
-
-  .navbar ul li a {
-    font-size: 16px;
+    max-height: 500px;
+    opacity: 1;
+    transform: translateY(0);
+    margin-top: 10px;
   }
 
   .navbar-search {
     width: 100%;
     justify-content: center;
     flex-direction: row;
-    align-items: center;
     gap: 8px;
+    padding: 10px 0;
   }
 
   .navbar-search input {
     width: 70%;
-    font-size: 16px;
-    margin-right: 0;
-  }
-
-  .navbar-search button {
-    width: auto; /* button menyesuaikan isi */
     font-size: 16px;
   }
 }
@@ -203,32 +197,31 @@
   }
 
   .navbar-logo {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 10px;
   }
 
   .navbar ul {
-    flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     margin-bottom: 10px;
+    justify-content: space-evenly;
+  }
+
+  .navbar ul li a {
+    font-size: 14px; /* ukuran tulisan lebih kecil */
   }
 
   .navbar-search {
-    width: 100%;
-    justify-content: center;
-    flex-direction: row; /* ubah jadi row juga */
-    align-items: center;
     gap: 5px;
   }
 
   .navbar-search input {
     width: 70%;
-    font-size: 16px;
-    margin-right: 0;
+    font-size: 14px; /* ukuran tulisan input lebih kecil */
+    padding-bottom: 10px;
   }
 
   .navbar-search button {
-    width: auto;
-    font-size: 16px;
+    font-size: 14px; /* ukuran tulisan tombol lebih kecil */
   }
 }
