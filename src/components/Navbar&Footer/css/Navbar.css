@@ -50,8 +50,12 @@
 .navbar-logo {
   display: flex;
   align-items: center;
+  animation: fadeSlideIn 0.6s ease forwards;
 }
 
+.navbar-logo:hover {
+  animation: bounceLogo 0.6s ease;
+}
 .navbar ul {
   list-style: none;
   display: flex;
@@ -137,6 +141,27 @@
 /* === Menu Toggle (Hamburger) === */
 .menu-toggle {
   display: none;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounceLogo {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }
 
 /* === Responsive Styling === */
