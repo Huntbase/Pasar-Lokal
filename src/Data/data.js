@@ -5,7 +5,7 @@ export const pasarData = [
     lokasi: "Jl. Suryakencana Kelurahan Babakan Pasar",
     kota: "Bogor Tengah",
     gambar: "/asset/pasar/Pasar Bogor.jpg",
-    JamOperasional: "07:00 - 11:00",
+    JamOperasional: "07:00 - 11:00 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.3466136045554!2d106.79730707418814!3d-6.6037778645533125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5b25198c59f%3A0xee4f3281bc67ca!2sPasar%20Bogor%20Suryakencana!5e0!3m2!1sid!2sid!4v1750229035167!5m2!1sid!2sid",
     type: "pasar",
@@ -24,7 +24,7 @@ export const pasarData = [
     lokasi: "Jl. Dewi Sartika No. 10",
     kota: "Bogor Tengah",
     gambar: "/asset/pasar/Pasar Kebon Kembang.jpg",
-    JamOperasional: "06:00 - 12:00",
+    JamOperasional: "06:00 - 12:00 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.4406674418033!2d106.78766067072044!3d-6.592022849831758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5c98186bf53%3A0xe9ac707bad1fe34c!2sPasar%20Kebon%20Kembang%20Blok%20A-B%20(Pasar%20Anyar)!5e0!3m2!1sid!2sid!4v1750229090130!5m2!1sid!2sid",
     type: "pasar",
@@ -42,7 +42,7 @@ export const pasarData = [
     lokasi: "Jl. Ceremai Ujung Kelurahan Sempur",
     kota: "Bogor Tengah",
     gambar: "/asset/pasar/Pasar Taman Kencana.jpg",
-    JamOperasional: "05:00 - 12:00",
+    JamOperasional: "05:00 - 12:00 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.4637659478526!2d106.79020617418792!3d-6.589132764410199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5b56d324cf1%3A0x286ddc510b269b14!2sPasar%20Taman%20Kencana!5e0!3m2!1sid!2sid!4v1750229154252!5m2!1sid!2sid",
     type: "pasar",
@@ -60,7 +60,7 @@ export const pasarData = [
     lokasi: "Jl. Padasuka Kelurahan Gudang",
     kota: "Bogor Tengah",
     gambar: "/asset/pasar/Pasar Padasuka.jpg",
-    JamOperasional: "05:00 - 12:00",
+    JamOperasional: "05:00 - 12:00 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.306160488027!2d106.79928547418818!3d-6.608827364602757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5e9bf4f75a1%3A0x486a8870b75f0547!2sPasar%20Padasuka!5e0!3m2!1sid!2sid!4v1750229188822!5m2!1sid!2sid",
     type: "pasar",
@@ -78,7 +78,7 @@ export const pasarData = [
     lokasi: "Jl. Mayjen Ishak Juarsa Nomor 21A",
     kota: "Bogor Barat",
     gambar: "/asset/pasar/Pasar Gunung Batu.jpg",
-    JamOperasional: "06:30 - 12:30",
+    JamOperasional: "06:30 - 12:30 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.423027983855!2d106.7734203707207!3d-6.594229049848534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5bce2cc1457%3A0x3d0e61e2bcc52d8f!2sPasar%20Gunung%20Batu!5e0!3m2!1sid!2sid!4v1750229214074!5m2!1sid!2sid",
     type: "pasar",
@@ -96,7 +96,7 @@ export const pasarData = [
     lokasi: "Jl. Pajajaran No. 100",
     kota: "Bogor Utara",
     gambar: "/asset/pasar/Pasar Jambu Dua.jpg",
-    JamOperasional: "07:00 - 11:30",
+    JamOperasional: "07:00 - 11:30 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.6146507872345!2d106.80486532418757!3d-6.570222914225963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c597b1876791%3A0x3cb1821a6e759bcf!2sPasar%20Jambu%2002!5e0!3m2!1sid!2sid!4v1750229243279!5m2!1sid!2sid",
     type: "pasar",
@@ -114,7 +114,7 @@ export const pasarData = [
     lokasi: "Jl. Sindangbarang No. 25",
     kota: "Bogor",
     gambar: "/asset/pasar/Pasar Sindangbarang.jpg",
-    JamOperasional: "05:30 - 12:00",
+    JamOperasional: "05:30 - 12:00 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.109115206573!2d107.1397517742012!3d-7.45317937345237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e67d7d1f906fc13%3A0xf75c00543620d484!2sPasar%20Sindangbarang!5e0!3m2!1sid!2sid!4v1750229267365!5m2!1sid!2sid",
     type: "pasar",
@@ -125,7 +125,7 @@ export const pasarData = [
     lokasi: "Jl. Perintis Kemerdekaan",
     kota: "Bogor Tengah",
     gambar: "/asset/pasar/Pasar Merdeka.jpg",
-    JamOperasional: "05:00 - 12:00",
+    JamOperasional: "05:00 - 12:00 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15853.760825619867!2d106.77613984848328!3d-6.592080521927093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c51d5bfbb77f%3A0x9f0ec6ff9a84674b!2sPasar%20Merdeka%20Bogor!5e0!3m2!1sid!2sid!4v1750228575012!5m2!1sid!2sid",
     type: "pasar",
@@ -143,7 +143,7 @@ export const pasarData = [
     lokasi: "Jl. Pamoyanan",
     kota: "Bogor Selatan",
     gambar: "/asset/pasar/Pasar Pamoyanan.jpg",
-    JamOperasional: "05:00 - 12:00",
+    JamOperasional: "05:00 - 12:00 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507272.99629248225!2d106.23138177343752!3d-6.638194199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69cfe5545d7bbb%3A0x17b2578c112dac4b!2sPasar%20Pamoyanan!5e0!3m2!1sid!2sid!4v1750229585829!5m2!1sid!2sid",
     type: "pasar",
@@ -161,7 +161,7 @@ export const pasarData = [
     lokasi: "Jl. Tanah Baru",
     kota: "Bogor Utara",
     gambar: "/asset/pasar/Pasar Tanah Baru.jpg",
-    JamOperasional: "05:00 - 12:00",
+    JamOperasional: "05:00 - 12:00 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.513843562994!2d106.81935312418781!3d-6.582862714349049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c681172a2b97%3A0x630e086a424139dd!2sPasar%20Tanah%20Baru!5e0!3m2!1sid!2sid!4v1750228738566!5m2!1sid!2sid",
     type: "pasar",
@@ -179,7 +179,7 @@ export const pasarData = [
     lokasi: "Jl. Siliwangi",
     kota: "Bogor Timur",
     gambar: "/asset/pasar/Pasar Sukasari.jpg",
-    JamOperasional: "05:00 - 12:00",
+    JamOperasional: "05:00 - 12:00 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.513843562994!2d106.81935312418781!3d-6.582862714349049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c681172a2b97%3A0x630e086a424139dd!2sPasar%20Tanah%20Baru!5e0!3m2!1sid!2sid!4v1750228738566!5m2!1sid!2sid",
     type: "pasar",
@@ -197,7 +197,7 @@ export const pasarData = [
     lokasi: "Jl. Dewi Satrika",
     kota: "Bogor Tengah",
     gambar: "/asset/pasar/Pasar Kebon Kembang.jpg",
-    JamOperasional: "05:00 - 12:00",
+    JamOperasional: "05:00 - 12:00 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.4416178115634!2d106.79013017418795!3d-6.591903964437252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5dad24de00d%3A0x7f40d67dffe6bcab!2sPasar%20Kebon%20Kembang%20Bogor%20(Ps.Anyar)!5e0!3m2!1sid!2sid!4v1750228904282!5m2!1sid!2sid",
     type: "pasar",
@@ -215,7 +215,7 @@ export const pasarData = [
     lokasi: "Jl. Raya Kemang Bogor",
     kota: "Bogor",
     gambar: "/asset/pasar/Pasar Tekum.jpg",
-    JamOperasional: "05:00 - 12:00",
+    JamOperasional: "05:00 - 12:00 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.867644324804!2d106.76785367418712!3d-6.538393963917091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c302b0a2d067%3A0xfef2022f72977bac!2sPasar%20tekum!5e0!3m2!1sid!2sid!4v1750228935889!5m2!1sid!2sid",
     type: "pasar",
@@ -233,7 +233,7 @@ export const pasarData = [
     lokasi: "Jl. Kapten Yusuf No.5",
     kota: "Bogor Barat",
     gambar: "/asset/minimarket/indomaret1.jpg",
-    JamOperasional: "07:00 - 22:00",
+    JamOperasional: "07:00 - 22:00 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.4406674418033!2d106.78766067072044!3d-6.592022849831758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5c98186bf53%3A0xe9ac707bad1fe34c!2sPasar%20Kebon%20Kembang%20Blok%20A-B%20(Pasar%20Anyar)!5e0!3m2!1sid!2sid!4v1750229090130!5m2!1sid!2sid",
     type: "minimarket",
@@ -244,7 +244,7 @@ export const pasarData = [
     lokasi: "Ruko Spbu Jl. Kh. Soleh Iskandar",
     kota: "Bogor",
     gambar: "/asset/minimarket/indomaret2.jpg",
-    JamOperasional: "05:00 - 12:00",
+    JamOperasional: "07:00 - 22:00 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.7237965350887!2d106.78193202494256!3d-6.5565102279166725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c46fcf9b5083%3A0xa4578b89458c8c52!2sIndomaret%20SPBU%20plaza%20Permata!5e0!3m2!1sid!2sid!4v1750229651183!5m2!1sid!2sid",
     type: "minimarket",
@@ -255,7 +255,7 @@ export const pasarData = [
     lokasi: "Jl. Raya Tajur",
     kota: "Bogor Barat",
     gambar: "/asset/minimarket/indomaret3.jpg",
-    JamOperasional: "05:00 - 12:00",
+    JamOperasional: "07:00 - 22:00 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7926.206401583426!2d106.82904099999999!3d-6.63410375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c8bb88a182bb%3A0x55b532de30ca5c21!2sIndomaret%20Raya%20Tajur%203!5e0!3m2!1sid!2sid!4v1750229683816!5m2!1sid!2sid",
     type: "minimarket",
@@ -266,7 +266,7 @@ export const pasarData = [
     lokasi: "Jl. Bogor Nirwana Raya",
     kota: "Bogor Selatan",
     gambar: "/asset/minimarket/indomaret1.jpg",
-    JamOperasional: "",
+    JamOperasional: "07:00 - 22:00 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.1069692807428!2d106.7934367!3d-6.633635299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69cf7639151c53%3A0xf4fbfe70490138c4!2sIndomaret%20fresh%20Bogor%20Nirwana%20Residence%202!5e0!3m2!1sid!2sid!4v1750229705698!5m2!1sid!2sid",
     type: "minimarket",
@@ -277,7 +277,7 @@ export const pasarData = [
     lokasi: "Jl. Pembangunan no 28",
     kota: "Bogor Tengah",
     gambar: "/asset/minimarket/Alfamart1.jpg",
-    JamOperasional: "",
+    JamOperasional: "07:00 - 22:00 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63416.43310515505!2d106.74273847910156!3d-6.581205799999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5bb29d60b4b%3A0xb40e3e1147dcaf86!2sAlfamart%20X682%20Dr.%20Semeru%202!5e0!3m2!1sid!2sid!4v1750229729812!5m2!1sid!2sid",
     type: "minimarket",
@@ -288,7 +288,7 @@ export const pasarData = [
     lokasi: "Jl. Pembangunan no 28",
     kota: "Bogor Utara",
     gambar: "/asset/minimarket/Alfamart2.jpg",
-    JamOperasional: "",
+    JamOperasional: "07:00 - 22:00 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63419.82170459813!2d106.77967257910156!3d-6.554615899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5414a1e9c5f%3A0x31a120a2a60daf10!2sAlfamart!5e0!3m2!1sid!2sid!4v1750229758296!5m2!1sid!2sid",
     type: "minimarket",
@@ -299,7 +299,7 @@ export const pasarData = [
     lokasi: "Jl. Kebon pedes",
     kota: "Bogor",
     gambar: "/asset/minimarket/Alfamart3.jpg",
-    JamOperasional: "",
+    JamOperasional: "07:00 - 22:00 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15854.581834956722!2d106.79235166977539!3d-6.566355199999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c56aff23a5d3%3A0xbf209fb71f398413!2sAlfamart%20Kebon%20Pedes!5e0!3m2!1sid!2sid!4v1750229777019!5m2!1sid!2sid",
     type: "minimarket",
@@ -310,7 +310,7 @@ export const pasarData = [
     lokasi: "Jl. Pilar ii",
     kota: "Bogor",
     gambar: "/asset/minimarket/indomaret4.jpg",
-    JamOperasional: "",
+    JamOperasional: "07:00 - 22:00 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15854.501131155044!2d106.74880306977536!3d-6.568888399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c57ad2ec543b%3A0xe91776e709a60e18!2sIndomaret%20Sindang%20Barang%20Pilar!5e0!3m2!1sid!2sid!4v1750229800774!5m2!1sid!2sid",
     type: "minimarket",
@@ -321,7 +321,7 @@ export const pasarData = [
     lokasi: "Jl. Sindang Barang Pengkolan Blok Bambu Kuning 2",
     kota: "Bogor",
     gambar: "/asset/minimarket/indomaret2.jpg",
-    JamOperasional: "",
+    JamOperasional: "07:00 - 22:00 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15854.086298632166!2d106.75952176977533!3d-6.581894200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c4f8dce0bf4b%3A0x665c390280253174!2sIndomaret%20Sindang%20Barang%20Raya!5e0!3m2!1sid!2sid!4v1750229865806!5m2!1sid!2sid",
     type: "minimarket",
@@ -332,7 +332,7 @@ export const pasarData = [
     lokasi: "Jl. Raya Ciomas no 15",
     kota: "Bogor",
     gambar: "/asset/minimarket/indomaret3.jpg",
-    JamOperasional: "",
+    JamOperasional: "07:00 - 22:00 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.364998711767!2d106.77840259999999!3d-6.601481699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5ab40ccd653%3A0xd0008bd4601f88ac!2sIndomaret%20SPBU%20Pasir%20Kuda!5e0!3m2!1sid!2sid!4v1750229883548!5m2!1sid!2sid",
     type: "minimarket",
@@ -343,7 +343,7 @@ export const pasarData = [
     lokasi: "Jl. Kyai H. Ahmad Sa'ayani No.62A",
     kota: "Bogor",
     gambar: "/asset/minimarket/Alfamart4.jpg",
-    JamOperasional: "",
+    JamOperasional: "07:00 - 22:00 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.993501145674!2d106.7774084!3d-6.5225024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c3d3a78b01f1%3A0x55c9fd48a77018d2!2sAlfamart%20KH%20Ahmad%20Sayani!5e0!3m2!1sid!2sid!4v1750230385733!5m2!1sid!2sid",
     type: "minimarket",
@@ -354,7 +354,7 @@ export const pasarData = [
     lokasi: "Jl. Parung Banteng No.72",
     kota: "Bogor",
     gambar: "/asset/minimarket/Alfamart1.jpg",
-    JamOperasional: "",
+    JamOperasional: "07:00 - 22:00 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.189078108916!2d106.82574590000002!3d-6.6234204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c775659138b3%3A0xc78509455968b409!2sAlfamart%20Katulampa!5e0!3m2!1sid!2sid!4v1750230400818!5m2!1sid!2sid",
     type: "minimarket",
@@ -365,7 +365,7 @@ export const pasarData = [
     lokasi: "Jl. Re. Abdullah No. 28E",
     kota: "Bogor",
     gambar: "/asset/minimarket/Alfamart2.jpg",
-    JamOperasional: "",
+    JamOperasional: "07:00 - 22:00 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2802.5244103019595!2d106.77857388935291!3d-6.601103046710612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5a4fe2a43ed%3A0xb2e4da5bb9873fad!2sAlfamart!5e0!3m2!1sid!2sid!4v1750230462036!5m2!1sid!2sid",
     type: "minimarket",
@@ -376,7 +376,7 @@ export const pasarData = [
     lokasi: "Jl. Pd Rumput",
     kota: "Bogor",
     gambar: "/asset/minimarket/Alfamart3.jpg",
-    JamOperasional: "",
+    JamOperasional: "07:00 - 22:00 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.1639798140195!2d106.80108662009879!3d-6.626544463120293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5f7cb010f6f%3A0x265bc365903957f0!2sALFAMART%20RANGGA%20MEKAR!5e0!3m2!1sid!2sid!4v1750230485127!5m2!1sid!2sid",
     type: "minimarket",
@@ -387,7 +387,7 @@ export const pasarData = [
     lokasi: "Jl. Lawanggintung no.16",
     kota: "Bogor",
     gambar: "/asset/minimarket/Alfamart4.jpg",
-    JamOperasional: "",
+    JamOperasional: "07:00 - 22:00 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.5362671836488!2d106.79465571744386!3d-6.580053199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5ff18f34099%3A0xf2f6af39ba491f59!2sSPBU%20bp%20Ahmad%20Yani!5e0!3m2!1sid!2sid!4v1750230516097!5m2!1sid!2sid",
     type: "minimarket",
@@ -398,7 +398,7 @@ export const pasarData = [
     lokasi: "Jl. Tentara Pelajar No.27",
     kota: "Bogor",
     gambar: "/asset/minimarket/Alfamart5.jpg",
-    JamOperasional: "",
+    JamOperasional: "07:00 - 22:00 WIB",
     GoogleMaps:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15854.432353006494!2d106.77886236977535!3d-6.571046499999989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5409c9dd9dd%3A0x56c3da3e3137455a!2sAlfamart%20Cimanggu%20Raya!5e0!3m2!1sid!2sid!4v1750230562760!5m2!1sid!2sid",
     type: "minimarket",
