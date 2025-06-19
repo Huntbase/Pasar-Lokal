@@ -56,15 +56,17 @@ Dirancang dengan antarmuka modern dan intuitif, aplikasi ini cocok digunakan ole
 
 ## 📂 Struktur Proyek
 
+```text
 Pasar-Lokal/
-├── public/ # File statis (HTML, ikon, dll)
-├── src/
-│ ├── components/ # Komponen UI reusable
-│ ├── pages/ # Halaman utama aplikasi
-│ ├── App.js # Root component
-│ └── index.js # Entry point React
-├── package.json # Informasi project & dependensi
-└── README.md # Dokumentasi proyek
+├── public/                 # File statis (HTML, ikon, dll)
+├── src/                    # Folder utama kode sumber
+│   ├── components/         # Komponen UI reusable
+│   ├── pages/              # Halaman utama aplikasi
+│   ├── App.js              # Root component React
+│   └── index.js            # Entry point React
+├── package.json            # Informasi project & dependensi
+└── README.md               # Dokumentasi proyek
+```
 
 ---
 
@@ -78,27 +80,38 @@ Pasar-Lokal/
    ```
 
 2. Install dependensi
+
+   ```bash
    npm install
+   ```
 
 3. Jalankan server pengembangan
+
+   ```bash
    npm start
+   ```
 
 4. Buka di browser
-   Akses aplikasi di http://localhost:3000
 
-🙌 Kontribusi
+   ```bash
+   Akses aplikasi di http://localhost:3000
+   ```
+
+## 🙌 Kontribusi
+
 Kontribusi sangat terbuka!
 Jika kamu menemukan bug, ingin menambahkan fitur, atau memperbaiki dokumentasi:
 
-Fork repositori ini
+1. Fork repositori ini
 
-Buat branch baru (git checkout -b fitur-anda)
+2. Buat branch baru (git checkout -b fitur-anda)
 
-Commit perubahan (git commit -m 'Tambah fitur A')
+3. Commit perubahan (git commit -m 'Tambah fitur A')
 
-Push ke branch (git push origin fitur-anda)
+4. Push ke branch (git push origin fitur-anda)
 
-Buat Pull Request
+5. Buat Pull Request
 
-📄 Lisensi
+## 📄 Lisensi
+
 Proyek ini dikembangkan untuk keperluan pembelajaran dan magang. Bebas digunakan dengan mencantumkan atribusi.
