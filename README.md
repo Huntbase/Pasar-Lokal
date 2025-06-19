@@ -2,7 +2,7 @@
 
 <p align="center">
 
-<img alt="Pasar Lokal Logo" src="https://img.freepik.com/free-vector/shop-logo-template_23-2149852454.jpg?w=740&t=st=1718793600~exp=1718794200~hmac=12f9a0d646e2a51db6b8a4d10ae9e9025d2c9f2b7ea4b86b2d781d7990dc33f6" width="50%">
+<img alt="Pasar Lokal Logo" src="./public/favicon.ico" width="50%">
 
 </p>
 
