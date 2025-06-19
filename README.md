@@ -125,3 +125,9 @@ Jika kamu menemukan bug, ingin menambahkan fitur, atau memperbaiki dokumentasi:
 ## 📄 Lisensi
 
 Proyek ini dikembangkan untuk keperluan pembelajaran dan magang. Bebas digunakan dengan mencantumkan atribusi.
+
+```bash
+
+Dibuat dengan ❤️ oleh tim Pasar-Lokal
+
+```
