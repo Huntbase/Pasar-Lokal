@@ -4,14 +4,16 @@ import Marketlist from "../Daftar/Marketlist.js";
 import Footer from "../Navbar&Footer/Footer.js";
 import "../Home/css/App.css";
 
-const isi = () => {
+const Isi = () => {
   return (
-    <>
+    <div className="page-container">
       <Navbar />
-      <Marketlist />
+      <main className="content-wrap">
+        <Marketlist />
+      </main>
       <Footer />
-    </>
+    </div>
   );
 };
 
-export default isi;
+export default Isi;
