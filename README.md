@@ -104,7 +104,7 @@ Pasar-Lokal/
 4. Buka di browser
 
    ```bash
-   Akses aplikasi di http://localhost:3000
+   Akses aplikasi di http://localhost:3000 ataupun https://pasarlokal.netlify.app/
    ```
 
 ## 🙌 Kontribusi
