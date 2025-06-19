@@ -20,6 +20,16 @@
   <a href="https://opensource.org/license/mit/">
     <img src="https://img.shields.io/badge/License-MIT-green.svg?logo=opensourceinitiative" alt="MIT License">
   </a>
+  <br />
+  <a href="#">
+    <img src="https://img.shields.io/badge/JavaScript-ES6+-yellow?logo=javascript&logoColor=black" alt="JavaScript">
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/HTML5-Intermediate-orange?logo=html5&logoColor=white" alt="HTML5">
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/CSS3-Intermediate-blue?logo=css3&logoColor=white" alt="CSS3">
+  </a>
 </p>
 
 </div>
