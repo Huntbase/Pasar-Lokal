@@ -141,6 +141,60 @@
 /* === Menu Toggle (Hamburger) === */
 .menu-toggle {
   display: none;
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+  z-index: 1000;
+  transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+.menu-toggle i {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Animasi saat hover */
+.menu-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* Tambahan efek saat menu dibuka */
+.menu-toggle.open i {
+  animation: rotateScaleOpen 0.4s ease;
+}
+
+/* Keyframes */
+@keyframes rotateScaleOpen {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: rotate(90deg) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(180deg) scale(1);
+  }
+}
+
+/* Animasi saat menutup menu (✖ → ☰) */
+.menu-toggle.close i {
+  animation: rotateScaleClose 0.4s ease;
+}
+
+@keyframes rotateScaleClose {
+  0% {
+    transform: rotate(180deg) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(90deg) scale(0.9);
+    opacity: 0.8;
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
 }
 
 @keyframes fadeSlideIn {

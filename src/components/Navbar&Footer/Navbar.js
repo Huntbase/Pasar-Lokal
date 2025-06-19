@@ -36,8 +36,11 @@ function Navbar() {
             <img src={gambar} alt="Logo Pasar Lokal" className="logo-image" />
           </Link>
         </div>
-        <div className="menu-toggle" onClick={toggleMenu}>
-          &#9776;
+        <div
+          className={`menu-toggle ${menuOpen ? "open" : "close"}`}
+          onClick={toggleMenu}
+        >
+          <i className={`bx ${menuOpen ? "bx-x" : "bx-menu"}`}></i>
         </div>
       </div>
 
