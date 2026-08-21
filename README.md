@@ -8,11 +8,11 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Huntbase/pasar-lokal-directory">
-    <img src="https://img.shields.io/github/repo-size/Huntbase/pasar-lokal-directory?label=Repo%20Size&color=green&logo=github" alt="Repo Size">
+  <a href="https://github.com/Huntbase/Pasar-Lokal">
+    <img src="https://img.shields.io/github/repo-size/Huntbase/Pasar-Lokal?label=Repo%20Size&color=green&logo=github" alt="Repo Size">
   </a>
-  <a href="https://github.com/Huntbase/pasar-lokal-directory/commits/main">
-    <img src="https://img.shields.io/github/last-commit/Huntbase/pasar-lokal-directory?label=Last%20Commit&color=blueviolet&logo=git" alt="Last Commit">
+  <a href="https://github.com/Huntbase/Pasar-Lokal/commits/main">
+    <img src="https://img.shields.io/github/last-commit/Huntbase/Pasar-Lokal?label=Last%20Commit&color=blueviolet&logo=git" alt="Last Commit">
   </a>
   <br />
   <img src="https://img.shields.io/badge/React-frontend-yellow?logo=javascript&logoColor=black" alt="React">
@@ -66,7 +66,7 @@ Aplikasi terdiri dari dua sisi:
 ## 📂 Struktur Proyek
 
 ```text
-pasar-lokal-directory/
+Pasar-Lokal/
 ├── public/                 # File statis (HTML, ikon, dll)
 ├── src/
 │   ├── components/         # Komponen UI reusable
@@ -82,8 +82,8 @@ pasar-lokal-directory/
 ## 🚀 Cara Menjalankan Aplikasi
 
 ```bash
-git clone https://github.com/[github-username]/pasar-lokal-directory.git
-cd pasar-lokal-directory
+git clone https://github.com/Huntbase/Pasar-Lokal.git
+cd Pasar-Lokal
 npm install
 npm start
 ```
