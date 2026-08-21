@@ -8,11 +8,11 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/[github-username]/pasar-lokal-directory">
-    <img src="https://img.shields.io/github/repo-size/[github-username]/pasar-lokal-directory?label=Repo%20Size&color=green&logo=github" alt="Repo Size">
+  <a href="https://github.com/Huntbase/pasar-lokal-directory">
+    <img src="https://img.shields.io/github/repo-size/Huntbase/pasar-lokal-directory?label=Repo%20Size&color=green&logo=github" alt="Repo Size">
   </a>
-  <a href="https://github.com/[github-username]/pasar-lokal-directory/commits/main">
-    <img src="https://img.shields.io/github/last-commit/[github-username]/pasar-lokal-directory?label=Last%20Commit&color=blueviolet&logo=git" alt="Last Commit">
+  <a href="https://github.com/Huntbase/pasar-lokal-directory/commits/main">
+    <img src="https://img.shields.io/github/last-commit/Huntbase/pasar-lokal-directory?label=Last%20Commit&color=blueviolet&logo=git" alt="Last Commit">
   </a>
   <br />
   <img src="https://img.shields.io/badge/React-frontend-yellow?logo=javascript&logoColor=black" alt="React">
